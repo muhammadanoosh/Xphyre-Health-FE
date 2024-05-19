@@ -8,7 +8,7 @@ export default function ContactInfoWidget() {
         <i className="cs_accent_bg">
           <Icon icon="ep:location" />
         </i>
-        Bahria Phase 7
+        16365 Park Ten Place, Suite 350, Houston,TX. 77084
       </li>
       <li>
         <i className="cs_accent_bg">
@@ -20,7 +20,7 @@ export default function ContactInfoWidget() {
         <i className="cs_accent_bg">
           <Icon icon="bi:envelope" />
         </i>
-        hellocallcenter@gmail.com
+        info@xphyrehealth.com
       </li>
     </ul>
   );

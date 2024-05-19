@@ -402,8 +402,8 @@
   z-index: 2;
 }
 .cs_text_widget {
-  height: 12rem;
-  font-size: 20px;
+  height: 4rem;
+  font-size: 40px;
   font-weight: 500;
 }
 .cs_contact_widget {
@@ -459,6 +459,11 @@
   100% {
     transform: rotateX(-20deg) rotateY(360deg);
   }
+}
+.cs_footer_background {
+  border: none;
+  padding: 16px 0;
+  background: linear-gradient(to right, $accent-start, $accent-end);
 }
 .cs_footer.cs_style_2.cs_type_1 {
   .cs_footer_bottom {

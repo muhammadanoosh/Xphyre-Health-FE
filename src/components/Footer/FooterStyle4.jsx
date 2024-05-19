@@ -4,21 +4,19 @@ import ContactInfoWidget from '../Widget/ContactInfoWidget';
 import SocialWidget from '../Widget/SocialWidget';
 import MenuWidget from '../Widget/MenuWidget';
 import NewsletterStyle4 from '../Widget/NewsletterStyle4';
-import Logo from '../../assets/Logo.svg';
+import {logo} from '../../assets/allAssets';
 
 const menuDataOne = [
-  { title: 'About Us', href: '/about' },
-  { title: 'Departments', href: '/departments' },
-  { title: 'Doctors', href: '/doctors' },
-  { title: 'Timetable', href: '/timetable' },
-  { title: 'Appointment', href: '/appointments' },
+  { title: 'About', href: '/about' },
+  { title: 'Our Departments', href: '/departments' },
+  { title: 'Our Business', href: '/doctors' },
+  { title: 'How We Help', href: '/' },
 ];
 
 const menuDataTwo = [
-  { title: 'Testimonials', href: '/' },
-  { title: 'Blog', href: '/blog' },
+  { title: 'Our Services', href: '/blog' },
+  { title: 'Our Expertise', href: '/' },
   { title: 'Contact Us', href: '/' },
-  { title: 'FAQs', href: '/' },
 ];
 const menuDataThree = [
   { title: 'Privacy Policy', href: '/' },
@@ -36,10 +34,11 @@ export default function FooterStyle4() {
         <div className="cs_footer_in">
           <div className="cs_footer_col">
             <div className="cs_footer_item">
-              <TextWidget
+             <logo/>
+              {/* <TextWidget
                 logoUrl={Logo}
                 text="Xphyre Health"
-              />
+              /> */}
               <ContactInfoWidget />
             </div>
           </div>

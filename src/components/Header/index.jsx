@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import SocialWidget from '../Widget/SocialWidget';
+import { HashLink as Link } from 'react-router-hash-link';
 import Newsletter from '../Widget/Newsletter';
 import IconBoxStyle11 from '../IconBox/IconBoxStyle11';
 import logoNav from '../../assets/Asset 3.png';
+import { closeIcon } from '../../assets/allAssets';
+import { logo, contact, email, location } from '../../assets/allAssets';
 import Spacing from '../Spacing';
 
-export default function Header({ logoSrc, variant }) {
+export default function Header({ variant }) {
   const [isSticky, setIsSticky] = useState(false);
   const [mobileToggle, setMobileToggle] = useState(false);
   const [sideNav, setSideNav] = useState(false);
@@ -28,45 +29,43 @@ export default function Header({ logoSrc, variant }) {
   return (
     <>
       <header
-        className={`cs_site_header cs_style1 cs_sticky_header ${
-          mobileToggle ? 'cs_mobile_toggle_active' : ''
-        } ${variant} ${isSticky ? 'cs_active_sticky' : ''}`}
+        className={`cs_site_header cs_style1 cs_sticky_header ${mobileToggle ? 'cs_mobile_toggle_active' : ''
+          } ${variant} ${isSticky ? 'cs_active_sticky' : ''}`}
       >
         <div className="cs_main_header">
           <div className="container">
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
-                <Link style={{display:"flex"}} className="cs_site_branding" to="/">
-                  <img style={{height:"3rem"}} src={logoNav} alt="Logo" />
-                  <p style={{fontSize:"20px",  position:"relative", top:"12px",left:"9px", color:'black' }}>Xphyre <span style={{fontWeight:600}}>Health</span></p>
-                </Link>
+                <div style={{ display: "flex" }} className="cs_site_branding" to="/">
+                  <img style={{ height: "3rem" }} src={logoNav} alt="Logo" />
+                  <p style={{ fontSize: "20px", position: "relative", top: "12px", left: "9px", color: 'black' }}>Xphyre <span style={{ fontWeight: 600 }}>Health</span></p>
+                </div>
                 <nav className="cs_nav">
                   <ul
-                    className={`${
-                      mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'
-                    }`}
+                    className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'
+                      }`}
                   >
-                    <li className="">
-                      <Link to="/">Home</Link>
+                    <li >
+                      <Link className='nav_links' smooth to="#home">Home</Link>
                     </li>
                     <li>
-                      <Link to="#about">About</Link>
+                      <Link className='nav_links' smooth to="#about">About</Link>
                     </li>
                     <li>
-                      <Link to="#our-departments">Our Departments</Link>
+                      <Link className='nav_links' smooth to="#our-departments">Our Departments</Link>
                     </li>
                     <li>
-                      <Link to="#out-business">Our Business</Link>
-                    </li>
-                    <li className="">
-                      <Link to="#how-we-help">How We Help</Link>
-                      
+                      <Link className='nav_links' smooth to="#our-business">Our Business</Link>
                     </li>
                     <li>
-                      <Link to="#our-services">Our Services</Link>
+                      <Link className='nav_links' smooth to="#our-services">Our Services</Link>
                     </li>
                     <li>
-                      <Link to="#our-expertise">Our Expertise</Link>
+                      <Link className='nav_links' smooth to="#our-expertise">Our Expertise</Link>
+                    </li>
+                    <li >
+                      <Link className='nav_links' smooth to="#how-we-help">How We Help</Link>
+
                     </li>
                   </ul>
                   <span
@@ -126,41 +125,36 @@ export default function Header({ logoSrc, variant }) {
             type="button"
             onClick={() => setSideNav(!sideNav)}
           >
-            <img src="/images/icons/close.svg" alt="Close" />
+            <img src={closeIcon} alt="Close" />
           </button>
           <div className="cs_logo_box">
-            <img src="/images/logo.svg" alt="Logo" />
+            <img src={logo} alt="Logo" />
             <div className="cs_height_15" />
             <h3 className="cs_fs_24 cs_semibold mb-0">
-              Your Partner in Health and Wellness
+              Xphyre Health
             </h3>
           </div>
-          <Spacing md="35" lg="35" xl="35" />
+          <Spacing md="20" lg="20" xl="20" />
           <hr />
-          <Spacing md="35" lg="50" xl="35" />
+          <Spacing md="20" lg="50" xl="35" />
           <IconBoxStyle11
             title="Phone"
             subTitle="123-456-7890"
-            iconSrc="/images/contact/icon_1.svg"
+            iconSrc={contact}
           />
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
             title="Email"
-            subTitle="hellocallcenter@gmail.com"
-            iconSrc="/images/contact/icon_2.svg"
+            subTitle="info@xphyrehealth.com"
+            iconSrc={email}
           />
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
             title="Location"
-            subTitle="123 Anywhere St., Any City, 12345"
-            iconSrc="/images/contact/icon_3.svg"
+            subTitle="Suite 350, Houston,TX. 77084"
+            iconSrc={location}
           />
-          <Spacing md="60" lg="60" xl="60" />
-          <Newsletter />
-          <Spacing md="70" lg="50" xl="50" />
-          <hr />
-          <Spacing md="70" lg="50" xl="50" />
-          <SocialWidget />
+       
         </div>
       </div>
       <div className={`cs_header_search ${searchToggle ? 'active' : ''}`}>
@@ -189,7 +183,7 @@ export default function Header({ logoSrc, variant }) {
                 type="button"
                 onClick={() => setSearchToggle(!searchToggle)}
               >
-                <img src="/images/icons/close.svg" alt="Close" />
+                <img src={closeIcon} alt="Close" />
               </button>
             </div>
           </div>

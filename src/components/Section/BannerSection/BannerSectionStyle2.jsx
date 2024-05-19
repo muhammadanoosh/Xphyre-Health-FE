@@ -1,23 +1,23 @@
 import React from 'react';
 import parse from 'html-react-parser';
-import bannerImg from '../../../assets/home_2/cta_bg.jpeg';
+import { banner2 } from '../../../assets/allAssets';
 
 
 
 
-export default function BannerSectionStyle2({ bgUrl, title, subTitle }) {
+export default function BannerSectionStyle2({ title, subTitle }) {
   return (
     <div className="container">
       <div
         className="cs_banner cs_style_2 cs_radius_25 cs_bg_filed"
-        style={{ backgroundImage: `url(${bannerImg})` }}
+        style={{ backgroundImage: `url(${banner2})` }}
       >
         <div className="cs_section_heading cs_style_1">
-          <h2 className="cs_section_title cs_fs_72 m-0 cs_white_color">
+          <h2 className="cs_section_title cs_fs_72 m-0 cs_main_heading_color">
             {parse(title)}
           </h2>
           <div className="cs_height_22" />
-          <p className="m-0 cs_white_color cs_fs_20 cs_medium">
+          <p className="m-0 para_colors cs_fs_20 cs_medium">
             {parse(subTitle)}
           </p>
         </div>

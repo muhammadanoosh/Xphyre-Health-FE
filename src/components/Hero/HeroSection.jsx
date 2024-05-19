@@ -1,13 +1,12 @@
 import React from 'react';
 import VideoModal from '../VideoModal';
-import bgImg from '../../assets/home_2/hero_bg.jpeg';
+import {heroBanner} from '../../assets/allAssets';
+
 
 
 export default function HeroSection({
   title,
   subTitle,
-  bgUrl,
-  imgUrl,
   videoBtnText,
   videoUrl,
   funfactList,
@@ -17,13 +16,13 @@ export default function HeroSection({
   return (
     <section
       className="cs_hero cs_style_2 cs_bg_filed"
-      style={{ backgroundImage: `url(${bgImg})`}}
+      style={{ backgroundImage: `url(${heroBanner})`}}
     >
       <div className="container">
         <div className="cs_hero_text">
-          <h1 className="cs_hero_title cs_white_color cs_fs_84">{title}</h1>
+          <h1 className="cs_hero_title cs_hero_color cs_fs_84">{title}</h1>
           <div className="cs_hero_text_in">
-            <p className="cs_hero_subtitle cs_white_color">{subTitle}</p>
+            <p className="cs_hero_subtitle cs_hero_color">{subTitle}</p>
           </div>
         </div>
       </div>
@@ -43,8 +42,8 @@ export default function HeroSection({
               <div className="cs_hero_funfact text-center">
                 {funfactList?.map((item, index) => (
                   <div className="cs_hero_funfact_col" key={index}>
-                    <h3 className="cs_white_color cs_fs_72">{item.number}</h3>
-                    <p className="cs_white_color mb-0">{item.title}</p>
+                    <h3 className="cs_hero_color cs_fs_72">{item.number}</h3>
+                    <p className="cs_hero_color mb-0">{item.title}</p>
                   </div>
                 ))}
               </div>

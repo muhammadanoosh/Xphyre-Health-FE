@@ -4,42 +4,38 @@ import MenuWidget from '../Widget/MenuWidget';
 import SocialWidget from '../Widget/SocialWidget';
 import Newsletter from '../Widget/Newsletter';
 import TextWidget from '../Widget/TextWidget';
-import footerBg from '../../assets/footer_bg_1.svg';
+import { HashLink as Link } from 'react-router-hash-link';
 import footerLogo from '../../assets/footer_logo_bg.svg';
-import footerRevolvingLogo from '../../assets/logo_icon.svg';
+import {logo} from '../../assets/allAssets';
+
 const menuDataOne = [
-  { title: 'About Us', href: '/about' },
-  { title: 'Departments', href: '/departments' },
-  { title: 'Doctors', href: '/doctors' },
-  { title: 'Timetable', href: '/timetable' },
-  { title: 'Appointment', href: '/appointments' },
-  { title: 'Testimonials', href: '/' },
+  { title: 'About', href: '#about' },
+  { title: 'Our Departments', href: '#our-departments' },
+  { title: 'Our Business', href: '#our-business' },
 ];
+
 const menuDataTwo = [
-  { title: 'Blog', href: '/blog' },
-  { title: 'Contact Us', href: '/contact' },
-  { title: 'FAQs', href: '/' },
-  { title: 'Privacy Policy', href: '/' },
-  { title: 'Terms and Conditions', href: '/' },
+  { title: 'Our Services', href: '#our-services' },
+  { title: 'Our Expertise', href: '#our-expertise' },
+  { title: 'How We Help', href: '#how-we-help' },
 ];
 
 export default function Footer() {
   return (
-    <footer className="cs_footer cs_style_1 cs_heading_color">
+    <footer className="cs_footer cs_style_1 cs_white_color">
       <div
-        className="cs_footer_logo_wrap"
-        style={{ backgroundImage: `url(${footerBg})` }}
+        className="cs_footer_logo_wrap cs_footer_background"
       >
         <div
           className="cs_footer_brand"
           style={{ backgroundImage:  `url(${footerLogo})` }}
         >
           <img
-            src={footerRevolvingLogo}
+            src={logo}
             alt="Logo Icon"
             className="cs_footer_brand_icon"
           />
-          <h2 className="cs_footer_brand_text">ProHealth</h2>
+          {/* <h2 className="cs_footer_brand_text">Xphyre Health</h2> */}
         </div>
       </div>
       <div className="cs_footer_main">
@@ -47,7 +43,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-4">
               <div className="cs_footer_item">
-                <TextWidget text="ProHealth Medical & <br />Healthcare Center" />
+                <TextWidget text="Xphyre Health" />
                 <ContactInfoWidget />
               </div>
             </div>
@@ -76,7 +72,7 @@ export default function Footer() {
         <div className="container">
           <div className="cs_footer_bottom_in">
             <SocialWidget />
-            <div className="cs_copyright">
+            <div className="cs_white_text">
               Copyright © 2024 Pro Health. All rights reserved.
             </div>
           </div>
