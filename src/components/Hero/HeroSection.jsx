@@ -1,6 +1,6 @@
 import React from 'react';
 import VideoModal from '../VideoModal';
-import {heroBanner} from '../../assets/allAssets';
+import { heroBanner } from '../../assets/allAssets';
 
 
 
@@ -16,7 +16,14 @@ export default function HeroSection({
   return (
     <section
       className="cs_hero cs_style_2 cs_bg_filed"
-      style={{ backgroundImage: `url(${heroBanner})`}}
+      style={{
+        backgroundImage: `url(${heroBanner})`,
+        backgroundPosition: '0% center', // Adjust this value based on the image
+        backgroundSize: 'cover',
+        width: '100%',
+        height: '100vh', // Adjust this value as needed
+        backgroundRepeat: 'no-repeat',
+      }}
     >
       <div className="container">
         <div className="cs_hero_text">

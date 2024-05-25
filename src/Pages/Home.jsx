@@ -96,7 +96,7 @@ export default function Home() {
       <Section>
         <BannerSectionStyle2
           title="Don’t Let Your Health Take a Backseat!"
-          subTitle="Schedule an appointment with one of our <br />
+          subTitle="Schedule an appointment with one of our
           experienced medical professionals today!"
         />
       </Section>

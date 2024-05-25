@@ -4,7 +4,7 @@ import Newsletter from '../Widget/Newsletter';
 import IconBoxStyle11 from '../IconBox/IconBoxStyle11';
 import logoNav from '../../assets/Asset 3.png';
 import { closeIcon } from '../../assets/allAssets';
-import { logo, contact, email, location } from '../../assets/allAssets';
+import { logoWithOpacity, contact, email, location } from '../../assets/allAssets';
 import Spacing from '../Spacing';
 
 export default function Header({ variant }) {
@@ -37,7 +37,7 @@ export default function Header({ variant }) {
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <div style={{ display: "flex" }} className="cs_site_branding" to="/">
-                  <img style={{ height: "3rem" }} src={logoNav} alt="Logo" />
+                  <img style={{ height: "3rem" }} src={logoNav} alt="logo" />
                   <p style={{ fontSize: "20px", position: "relative", top: "12px", left: "9px", color: 'black' }}>Xphyre <span style={{ fontWeight: 600 }}>Health</span></p>
                 </div>
                 <nav className="cs_nav">
@@ -120,41 +120,48 @@ export default function Header({ variant }) {
           onClick={() => setSideNav(!sideNav)}
         />
         <div className="cs_sidenav_in">
-          <button
-            className="cs_close"
-            type="button"
-            onClick={() => setSideNav(!sideNav)}
+          <div
+            className='logo_with_opacity'
           >
-            <img src={closeIcon} alt="Close" />
-          </button>
-          <div className="cs_logo_box">
-            <img src={logo} alt="Logo" />
-            <div className="cs_height_15" />
-            <h3 className="cs_fs_24 cs_semibold mb-0">
-              Xphyre Health
-            </h3>
+            <img src={logoWithOpacity} alt="Logo" />
           </div>
-          <Spacing md="20" lg="20" xl="20" />
-          <hr />
-          <Spacing md="20" lg="50" xl="35" />
-          <IconBoxStyle11
-            title="Phone"
-            subTitle="123-456-7890"
-            iconSrc={contact}
-          />
-          <Spacing md="30" lg="30" xl="30" />
-          <IconBoxStyle11
-            title="Email"
-            subTitle="info@xphyrehealth.com"
-            iconSrc={email}
-          />
-          <Spacing md="30" lg="30" xl="30" />
-          <IconBoxStyle11
-            title="Location"
-            subTitle="Suite 350, Houston,TX. 77084"
-            iconSrc={location}
-          />
-       
+          <div className='after_logo_with_opacity'>
+
+            <button
+              className="cs_close"
+              type="button"
+              onClick={() => setSideNav(!sideNav)}
+            >
+              <img src={closeIcon} alt="Close" />
+            </button>
+            <div className="cs_logo_box">
+              <div className="cs_height_15" />
+              <h3 className="cs_fs_24 cs_semibold mb-0">
+                Xphyre Health
+              </h3>
+            </div>
+            <Spacing md="20" lg="20" xl="20" />
+            <hr />
+            <Spacing md="20" lg="50" xl="35" />
+            <IconBoxStyle11
+              title="Phone"
+              subTitle="123-456-7890"
+              iconSrc={contact}
+            />
+            <Spacing md="30" lg="30" xl="30" />
+            <IconBoxStyle11
+              title="Email"
+              subTitle="info@xphyrehealth.com"
+              iconSrc={email}
+            />
+            <Spacing md="30" lg="30" xl="30" />
+            <IconBoxStyle11
+              title="Location"
+              subTitle="Suite 350, Houston,TX. 77084"
+              iconSrc={location}
+            />
+          </div>
+
         </div>
       </div>
       <div className={`cs_header_search ${searchToggle ? 'active' : ''}`}>

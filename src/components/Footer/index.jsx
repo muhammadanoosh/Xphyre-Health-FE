@@ -4,7 +4,6 @@ import MenuWidget from '../Widget/MenuWidget';
 import SocialWidget from '../Widget/SocialWidget';
 import Newsletter from '../Widget/Newsletter';
 import TextWidget from '../Widget/TextWidget';
-import { HashLink as Link } from 'react-router-hash-link';
 import footerLogo from '../../assets/footer_logo_bg.svg';
 import {logo} from '../../assets/allAssets';
 
