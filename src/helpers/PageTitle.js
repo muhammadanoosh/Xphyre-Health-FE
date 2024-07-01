@@ -1,4 +1,4 @@
 export const pageTitle = title => {
   return (document.title =
-    title + ' -  Xphyre-Health');
+    title + ' - Xphyre-Health');
 };

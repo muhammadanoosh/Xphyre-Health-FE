@@ -312,7 +312,7 @@ hr {
   color: $accent;
 }
 
-.cs_main_heading_color {
+.cs_main_heading_color{
     background: -webkit-linear-gradient($accent-three, $accent-four);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -576,7 +576,7 @@ hr {
   border-radius: 30px;
   outline: none;
   transition: all 0.3s ease;
-  border: 1px solid rgba($white, 0.5);
+  border: 1px solid rgba($accent-three, 0.5);
   padding: 26px 30px;
   background-color: transparent;
 
@@ -612,7 +612,7 @@ textarea::placeholder,
 input::placeholder,
 .cs_form_field::placeholder,
 .cs_form_field_2::placeholder {
-  color: $white;
+  color: $accent-four;
 }
 
 textarea:-ms-input-placeholder,
@@ -3126,8 +3126,9 @@ a.ui-button:active,
 .cs_iconbox_subtitle {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  // white-space: nowrap;
   transition: all 1s ease;
+  text-align: justify;
 }
 
 .cs_iconbox:hover .cs_iconbox_subtitle {

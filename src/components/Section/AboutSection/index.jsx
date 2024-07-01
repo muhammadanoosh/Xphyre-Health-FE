@@ -33,9 +33,9 @@ export default function AboutSection({
           <div className="col-lg-5">
             <div className="cs_about_content">
               <div className="cs_section_heading cs_style_1">
-                <h2 className="cs_section_title cs_fs_72 m-0">{title}</h2>
+                <h2 className="cs_section_title cs_fs_72 m-0 cs_main_heading_color ">{title}</h2>
                 <div className="cs_height_5" />
-                <h3 className="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">
+                <h3 className="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32 cs_main_heading_color ">
                   {subTitle}
                 </h3>
               </div>
@@ -57,10 +57,10 @@ export default function AboutSection({
                         />
                       </svg>
                     </i>
-                    <h3 className="cs_normal cs_fs_32 cs_body_color">
+                    <h3 className="cs_normal cs_fs_32 cs_body_color para_color">
                       {item.featureListTitle}
                     </h3>
-                    <p className="m-0">{item.featureListSubTitle}</p>
+                    <p className="m-0 para_color">{item.featureListSubTitle}</p>
                   </li>
                 ))}
               </ul>

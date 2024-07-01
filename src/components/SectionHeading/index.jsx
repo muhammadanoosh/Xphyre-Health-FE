@@ -15,7 +15,7 @@ export default function SectionHeading({
     >
       {titleUp && (
         <>
-          <h3 className="cs_section_subtitle text-uppercase cs_main_heading_color cs_semibold m-0  cs_fs_32">
+          <h3 className="cs_section_subtitle text-uppercase cs_main_heading_color cs_semibold m-0 cs_accent_color cs_fs_32 ">
             {parse(titleUp)}
           </h3>
           <Spacing md="5" />
@@ -28,7 +28,7 @@ export default function SectionHeading({
       {titleDown && (
         <>
           <Spacing md="5" />
-          <h3 className="cs_section_subtitle text-uppercase cs_accent_end_color cs_semibold m-0 cs_accent_end_color cs_fs_32">
+          <h3 className="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">
             {parse(titleDown)}
           </h3>
         </>
@@ -36,7 +36,7 @@ export default function SectionHeading({
       {subTitle && (
         <>
           <Spacing md="25" />
-          <p className="m-0">{parse(subTitle)}</p>
+          <p className="m-0 para_color">{parse(subTitle)}</p>
         </>
       )}
     </div>

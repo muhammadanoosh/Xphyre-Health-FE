@@ -1,5 +1,5 @@
 import React from 'react';
-import NewsletterForm from '../NewsletterForm';
+import NewsletterForm from '../../NewsletterForm';
 
 export default function NewsletterStyle5({ title }) {
   return (

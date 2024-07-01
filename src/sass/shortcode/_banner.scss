@@ -46,18 +46,18 @@
   }
 }
 .cs_banner.cs_style_2 {
-  padding: 350px 43% 50px 9%;
+  padding: 200px 9% 200px 43%;
   @media (max-width: 1700px) {
-    padding: 250px 43% 50px 9%;
+    padding: 150px 9% 150px 43%;
   }
   @media (max-width: 1400px) {
-    padding: 150px 40% 150px 5%;
+    padding: 150px 5% 150px 40%;
   }
   @media (max-width: 1199px) {
-    padding: 120px 36% 120px 4%;
+    padding: 120px 4% 120px 36%;
   }
   @media (max-width: 991px) {
-    padding: 80px 25% 80px 30px;
+    padding: 80px 30px 80px 25%;
   }
   @media (max-width: 767px) {
     padding: 80px 30px;
@@ -100,6 +100,9 @@
 
   .cs_banner_title {
     margin-bottom: 25px;
+    background: -webkit-linear-gradient($black, $gray-dark);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     @media (max-width: 1199px) {
       font-size: 50px;
     }

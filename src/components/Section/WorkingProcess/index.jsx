@@ -2,14 +2,13 @@ import React from 'react';
 import SectionHeading from '../../SectionHeading';
 import Spacing from '../../Spacing';
 import IconBoxStyle3 from '../../IconBox/IconBoxStyle3';
-import {workingProcessData} from "../../../Constants/constants"
-
 
 export default function WorkingProcess({
   sectionTitle,
   sectionTitleUp,
   sectionTitleDown,
   sectionSubTitle,
+  data,
 }) {
   return (
     <div className="cs_shape_wrap">
@@ -24,7 +23,7 @@ export default function WorkingProcess({
         />
         <Spacing md="105" lg="50" />
         <div className="cs_iconbox_3_wrap">
-          {workingProcessData?.map((item, index) => (
+          {data?.map((item, index) => (
             <IconBoxStyle3 key={index} {...item} />
           ))}
         </div>

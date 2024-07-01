@@ -2,10 +2,11 @@ import React from 'react';
 import BannerSectionStyle3 from '../components/Section/BannerSection/BannerSectionStyle3';
 import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
 import Section from '../components/Section';
-import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/ServiceSection';
+import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import FeaturesSectionStyle2 from '../components/Section/FeaturesSection/FeaturesSectionStyle2';
 import FunFactSection from '../components/Section/FunFactSection';
 import TeamSection from '../components/Section/TeamSection';
+import GallerySection from '../components/Section/GallerySection';
 import AwardSectionStyle2 from '../components/Section/AwardSection/AwardSectionStyle2';
 import { pageTitle } from '../helpers/PageTitle';
 const departmentData = [
@@ -120,6 +121,13 @@ const teamData = [
   },
 ];
 
+const galleryData = [
+  { imgUrl: '/images/about/portfolio_2_lg.jpeg' },
+  { imgUrl: '/images/about/portfolio_3_lg.jpeg' },
+  { imgUrl: '/images/about/portfolio_1_lg.jpeg' },
+  { imgUrl: '/images/about/portfolio_4_lg.jpeg' },
+  { imgUrl: '/images/about/portfolio_5_lg.jpeg' },
+];
 const awardData = [
   {
     iconUrl: '/images/icons/award.svg',
@@ -174,11 +182,11 @@ export default function About() {
         />
       </Section>
       <Section topMd={170} topLg={120} topXl={80}>
-        {/* <GallerySection
+        <GallerySection
           sectionTitle="Our Facilities and <br />Latest Activities"
           sectionTitleUp="HAVE A LOOK AT"
           data={galleryData}
-        /> */}
+        />
       </Section>
       <Section
         topMd={190}

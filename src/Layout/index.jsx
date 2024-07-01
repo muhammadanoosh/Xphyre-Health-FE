@@ -1,12 +1,12 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Footer from '../components/Footer/index';
-import Header from '../components/Header';
+import Footer from '../components/Footer/footer';
+import Navbar from '../components/Navbar/navbar';
 
 export default function Layout() {
   return (
     <>
-      <Header  variant="cs_heading_color" />
+      <Navbar logoSrc="/images/logo.svg" variant="cs_heading_color" />
       <Outlet />
       <Footer />
     </>

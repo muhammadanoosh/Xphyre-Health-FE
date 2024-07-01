@@ -302,7 +302,6 @@
 .cs_iconbox.cs_style_7 {
   border-radius: 20px;
   background: #fff;
-  color: black;
   box-shadow: 0px 4px 21px 1px rgba(48, 123, 196, 0.1);
   transition: all 0.4s ease;
   position: relative;
@@ -482,7 +481,7 @@
     top: 0;
     left: 0;
     border-radius: inherit;
-    background: white;
+    background: linear-gradient(154deg, #d2eaef 0%, #86bbf1 100%);
     height: 100%;
     width: 100%;
     transition: all 0.4s ease;
@@ -543,7 +542,7 @@
   }
 }
 .cs_iconbox.cs_style_9 {
-  background: linear-gradient(154deg, #d2eaef 0%, #86bbf1 100%);
+  background: linear-gradient(to right, #00A4FF, #87a8f1);
   padding: 40px 25px;
   transition: all 0.4s ease;
   margin-bottom: 24px;
@@ -597,7 +596,7 @@
 .cs_iconbox.cs_style_11 {
   display: flex;
   align-items: center;
-  background-color: rgba(210, 234, 239, 1);
+  background-color: rgba(210, 234, 239, 0.5);
   padding: 38px 54px;
   gap: 30px;
   @media (max-width: 1700px) {

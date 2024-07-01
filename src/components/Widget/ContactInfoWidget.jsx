@@ -8,13 +8,13 @@ export default function ContactInfoWidget() {
         <i className="cs_accent_bg">
           <Icon icon="ep:location" />
         </i>
-        16365 Park Ten Place, Suite 350, Houston,TX. 77084
+        Suite 350, Houston,TX. 77084
       </li>
       <li>
         <i className="cs_accent_bg">
           <Icon icon="fluent:call-24-regular" />
         </i>
-        123-456-7890
+        855-585-3935
       </li>
       <li>
         <i className="cs_accent_bg">

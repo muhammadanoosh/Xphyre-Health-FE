@@ -4,7 +4,7 @@ export default function ContactForm() {
   return (
     <div className="cs_contact_form cs_style_1 cs_white_bg cs_radius_30">
       <div className="row">
-        <div className="col-lg-6">
+        <div className="col-lg-6 para_color">
           <label className="cs_input_label cs_heading_color">Name</label>
           <input
             type="text"
@@ -14,7 +14,7 @@ export default function ContactForm() {
           <div className="cs_height_42 cs_height_xl_25" />
         </div>
         <div className="col-lg-6">
-          <label className="cs_input_label cs_heading_color">Email</label>
+          <label className="cs_input_label cs_heading_color para_color">Email</label>
           <input
             type="email"
             className="cs_form_field"
@@ -23,7 +23,7 @@ export default function ContactForm() {
           <div className="cs_height_42 cs_height_xl_25" />
         </div>
         <div className="col-lg-12">
-          <label className="cs_input_label cs_heading_color">Subject</label>
+          <label className="cs_input_label cs_heading_color para_color">Subject</label>
           <input
             type="text"
             className="cs_form_field"
@@ -32,7 +32,7 @@ export default function ContactForm() {
           <div className="cs_height_42 cs_height_xl_25" />
         </div>
         <div className="col-lg-12">
-          <label className="cs_input_label cs_heading_color">Message</label>
+          <label className="cs_input_label cs_heading_color para_color">Message</label>
           <textarea
             cols={30}
             rows={10}

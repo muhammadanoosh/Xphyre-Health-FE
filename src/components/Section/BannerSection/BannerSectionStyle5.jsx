@@ -1,5 +1,6 @@
 import React from 'react';
 import parse from 'html-react-parser';
+import {BannerBack} from '../../../assets/allAssets';
 
 export default function BannerSectionStyle5({
   bgUrl,
@@ -10,7 +11,9 @@ export default function BannerSectionStyle5({
   return (
     <section
       className="cs_banner cs_style_5 cs_bg_filed"
-      style={{ backgroundImage: `url(${bgUrl})` }}
+      style={{ backgroundImage: `url(${BannerBack})` }}
+      // style={{ background: "linear-gradient(to right,#00A4FF, #87a8f1)" }}
+
     >
       <div className="cs_banner_img">
         <img src={imgUrl} alt="Banner" />
@@ -18,9 +21,6 @@ export default function BannerSectionStyle5({
       <div className="container">
         <div className="cs_banner_text">
           <h2 className="cs_banner_title cs_fs_72">{parse(title)}</h2>
-          <p className="cs_banner_subtitle cs_fs_20 mb-0 cs_heading_color">
-            {parse(subTitle)}
-          </p>
         </div>
       </div>
     </section>

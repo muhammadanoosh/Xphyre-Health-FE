@@ -1,9 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import TestimonialStyle2 from '../Testimonial/TestimonialStyle2';
-import leftArrow from '../../assets/icons/left_arrow_blue.svg';
-import rightArrow from '../../assets/icons/right_arrow_blue.svg';
-
 
 export default function TestimonialCarousel({ data }) {
   /** Slider Settings **/
@@ -17,7 +14,7 @@ export default function TestimonialCarousel({ data }) {
       aria-hidden="true"
       aria-disabled={currentSlide === 0 ? true : false}
     >
-      <img src={leftArrow} alt="Icon" />
+      <img src="images/icons/left_arrow_blue.svg" alt="Icon" />
     </div>
   );
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
@@ -30,7 +27,7 @@ export default function TestimonialCarousel({ data }) {
       aria-hidden="true"
       aria-disabled={currentSlide === slideCount - 1 ? true : false}
     >
-      <img src={rightArrow} alt="Icon" />
+      <img src="images/icons/right_arrow_blue.svg" alt="Icon" />
     </div>
   );
   const settings = {

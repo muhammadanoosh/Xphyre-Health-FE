@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function SocialWidget() {
   return (
     <div className="cs_social_links_wrap">
-      <h2 className='cs_white_text'>Follow Us</h2>
+      <h2>Follow Us</h2>
       <div className="cs_social_links">
         <Link to="/">
           <Icon icon="fa-brands:facebook-f" />

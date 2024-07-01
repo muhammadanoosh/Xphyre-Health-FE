@@ -1,7 +1,6 @@
 import React from 'react';
 import parse from 'html-react-parser';
 import NewsletterForm from '../NewsletterForm';
-import right_arrow_blue from '../../assets/icons/right_arrow_blue.svg';
 
 export default function NewsletterStyle4({ title, subTitle }) {
   return (
@@ -14,7 +13,7 @@ export default function NewsletterStyle4({ title, subTitle }) {
         <NewsletterForm
           label="Your Email"
           btnText="Submit"
-          btnArrowUrl={right_arrow_blue}
+          btnArrowUrl="/images/icons/right_arrow_blue.svg"
         />
       </div>
     </div>

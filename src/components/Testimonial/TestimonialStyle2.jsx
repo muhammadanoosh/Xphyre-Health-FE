@@ -1,8 +1,11 @@
 import React from 'react';
+import Rating from '../Rating';
+
 export default function TestimonialStyle2({
   text,
+  ratingNumber,
   avatarImgUrl,
-  serviceName,
+  avatarName,
   avatarDesignation,
 }) {
   return (
@@ -27,6 +30,7 @@ export default function TestimonialStyle2({
           </svg>
         </div>
         <p>{text}</p>
+        <Rating ratingNumber={ratingNumber} />
       </div>
       <div className="cs_testimonial_meta">
         <div className="cs_testimonial_avatar">
@@ -34,7 +38,7 @@ export default function TestimonialStyle2({
         </div>
         <div className="cs_testimonial_meta_right">
           <h3 className="cs_fs_24 cs_semibold m-0 text-uppercase">
-            {serviceName}
+            {avatarName}
           </h3>
           <p className="cs_heading_color m-0">{avatarDesignation}</p>
         </div>
