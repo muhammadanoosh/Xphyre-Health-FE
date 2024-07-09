@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import DropDown from './DropDown';
 import logoNav from '../../assets/Asset 3.png';
 import { closeIcon } from '../../assets/allAssets';
@@ -26,6 +26,10 @@ export default function Navbar({ variant }) {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleLinkClick = () => {
+    setMobileToggle(false);
+  };
   return (
     <>
       <header
@@ -36,89 +40,127 @@ export default function Navbar({ variant }) {
           <div className="container">
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
-                <div style={{ display: "flex" }} className="cs_site_branding" to="/">
-                  <img style={{ height: "3rem" }} src={logoNav} alt="logo" />
-                  <p style={{ fontSize: "20px", position: "relative", top: "12px", left: "9px", color: 'black' }}>Xphyre <span style={{ fontWeight: 600 }}>Health</span></p>
-                </div>
+                <a href="/">
+                  <div style={{ display: "flex" }} className="cs_site_branding">
+                    <img style={{ height: "3rem" }} src={logoNav} alt="logo" />
+                    <p style={{ fontSize: "20px", position: "relative", top: "12px", left: "9px", color: 'black' }}>Xphyre <span style={{ fontWeight: 600 }}>Health</span></p>
+                  </div>
+                </a>
                 <nav className="cs_nav">
-                  <ul
-                    className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'
-                      }`}
-                  >
+                  <ul className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'}`}>
                     <li className="">
-                      <Link to="/">Home</Link>
+                      <NavLink exact to="/" activeClassName="active" onClick={handleLinkClick}>
+                        Home
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="/OurProcesses">Our Processes</Link>
+                      <NavLink to="/OurProcesses" activeClassName="active" onClick={handleLinkClick}>
+                        Our Processes
+                      </NavLink>
                     </li>
-
                     <li className="menu-item-has-children">
-                      <Link to="#">Our Services</Link>
+                      <Link to="#" onClick={handleLinkClick}>
+                        Our Services
+                      </Link>
                       <DropDown>
-                        <ul className='nav-dropdown' style={{ width: "23rem" }}>
+                        <ul className="nav-dropdown" style={{ width: "23rem" }}>
                           <li>
-                            <Link to="/C&C">Credentialing and Contracting Services</Link>
+                            <NavLink to="/C&C" activeClassName="active" onClick={handleLinkClick}>
+                              Credentialing and Contracting Services
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/IEVS">Insurance Eligibility Verification Services</Link>
+                            <NavLink to="/IEVS" activeClassName="active" onClick={handleLinkClick}>
+                              Insurance Eligibility Verification Services
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/CA">Chart Auditing</Link>
+                            <NavLink to="/CA" activeClassName="active" onClick={handleLinkClick}>
+                              Chart Auditing
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/MARS">Medical Accounts Receivable Services</Link>
+                            <NavLink to="/MARS" activeClassName="active" onClick={handleLinkClick}>
+                              Medical Accounts Receivable Services
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="MB&CS">Medical Billing and Coding Services</Link>
+                            <NavLink to="/MB&CS" activeClassName="active" onClick={handleLinkClick}>
+                              Medical Billing and Coding Services
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/MIEAS">Medical IT Equipment and Services</Link>
+                            <NavLink to="/MIEAS" activeClassName="active" onClick={handleLinkClick}>
+                              Medical IT Equipment and Services
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/OONNS">Out of Networking Negotiation Services</Link>
+                            <NavLink to="/OONNS" activeClassName="active" onClick={handleLinkClick}>
+                              Out of Networking Negotiation Services
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/PBS">Patient Billing Services</Link>
+                            <NavLink to="/PBS" activeClassName="active" onClick={handleLinkClick}>
+                              Patient Billing Services
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/PARAS">Prior and Retro Authorization Services</Link>
+                            <NavLink to="/PARAS" activeClassName="active" onClick={handleLinkClick}>
+                              Prior and Retro Authorization Services
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/CAIC">Clinics and Imaging Centers</Link>
+                            <NavLink to="/CAIC" activeClassName="active" onClick={handleLinkClick}>
+                              Clinics and Imaging Centers
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/ER">Emergency Rooms</Link>
+                            <NavLink to="/ER" activeClassName="active" onClick={handleLinkClick}>
+                              Emergency Rooms
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/HS">Healthcare Systems</Link>
+                            <NavLink to="/HS" activeClassName="active" onClick={handleLinkClick}>
+                              Healthcare Systems
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/H">Hospitals</Link>
+                            <NavLink to="/H" activeClassName="active" onClick={handleLinkClick}>
+                              Hospitals
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/PP">Private Practices</Link>
+                            <NavLink to="/PP" activeClassName="active" onClick={handleLinkClick}>
+                              Private Practices
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/UC">Urgent Care</Link>
+                            <NavLink to="/UC" activeClassName="active" onClick={handleLinkClick}>
+                              Urgent Care
+                            </NavLink>
                           </li>
                         </ul>
                       </DropDown>
                     </li>
                     <li>
-                      <Link to="/OurSolutions">Our Solutions</Link>
+                      <NavLink to="/OurSolutions" activeClassName="active" onClick={handleLinkClick}>
+                        Our Solutions
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="/ContactUs">Contact Us</Link>
+                      <NavLink to="/ContactUs" activeClassName="active" onClick={handleLinkClick}>
+                        Contact Us
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="/TheXphyreEdge">The Xyphre Edge</Link>
+                      <NavLink to="/TheXphyreEdge" activeClassName="active" onClick={handleLinkClick}>
+                        The Xyphre Edge
+                      </NavLink>
                     </li>
                   </ul>
                   <span
                     className={
-                      mobileToggle
-                        ? 'cs_menu_toggle cs_teggle_active'
-                        : 'cs_menu_toggle'
+                      mobileToggle ? 'cs_menu_toggle cs_teggle_active' : 'cs_menu_toggle'
                     }
                     onClick={() => setMobileToggle(!mobileToggle)}
                   >

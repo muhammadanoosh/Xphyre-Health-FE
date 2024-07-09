@@ -421,7 +421,6 @@
 
         >a {
           padding: 10px 0;
-          color: black;
           display: inline-flex;
           position: relative;
           height: inherit;
@@ -912,4 +911,8 @@
       display: none;
     }
   }
+}
+
+.active{
+  color: $accent-four;
 }

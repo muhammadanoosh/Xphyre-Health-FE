@@ -3,7 +3,7 @@ import heroBanner from './heroBanner.png';
 import howWeHelp from './howWeHelp.png';
 import ourBusiness from './ourBusiness.png';
 import banner2 from './banner2.png';
-import logo from './Logo.svg';
+import logo from './logo.svg';
 import logoWithOpacity from './sidebarLogoWithOpacity.svg';
 import closeIcon from './icons/close.svg';
 import whiteArrow from './icons/arrow_white.svg';
