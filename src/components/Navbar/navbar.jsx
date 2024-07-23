@@ -6,6 +6,8 @@ import { closeIcon } from '../../assets/allAssets';
 import { logoWithOpacity, contact, email, location } from '../../assets/allAssets';
 import IconBoxStyle11 from '../IconBox/IconBoxStyle11';
 import Spacing from '../Spacing';
+import { navLinks } from '../../Constants/constants';
+
 
 export default function Navbar({ variant }) {
   const [isSticky, setIsSticky] = useState(false);
@@ -46,7 +48,7 @@ export default function Navbar({ variant }) {
                     <p style={{ fontSize: "20px", position: "relative", top: "12px", left: "9px", color: 'black' }}>Xphyre <span style={{ fontWeight: 600 }}>Health</span></p>
                   </div>
                 </a>
-                <nav className="cs_nav">
+                {/* <nav className="cs_nav">
                   <ul className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'}`}>
                     <li className="">
                       <NavLink exact to="/" activeClassName="active" onClick={handleLinkClick}>
@@ -166,7 +168,51 @@ export default function Navbar({ variant }) {
                   >
                     <span></span>
                   </span>
+                </nav> */}
+                <nav className="cs_nav">
+                  <ul className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'}`}>
+                    {navLinks.map((link, index) => (
+                      link.subLinks ? (
+                        <li className="menu-item-has-children" key={index}>
+                          <Link to="#" onClick={handleLinkClick}>
+                            {link.label}
+                          </Link>
+                          <DropDown>
+                            <ul className="nav-dropdown" style={{ width: "23rem" }}>
+                              {link.subLinks.map((subLink, subIndex) => (
+                                <li key={subIndex}>
+                                  <NavLink to={subLink.to} activeClassName="active" onClick={handleLinkClick}>
+                                    {subLink.label}
+                                  </NavLink>
+                                </li>
+                              ))}
+                            </ul>
+                          </DropDown>
+                        </li>
+                      ) : (
+                        <li key={index}>
+                          <NavLink
+                            exact={link.exact || false}
+                            to={link.to}
+                            activeClassName="active"
+                            onClick={handleLinkClick}
+                          >
+                            {link.label}
+                          </NavLink>
+                        </li>
+                      )
+                    ))}
+                  </ul>
+                  <span
+                    className={
+                      mobileToggle ? 'cs_menu_toggle cs_teggle_active' : 'cs_menu_toggle'
+                    }
+                    onClick={() => setMobileToggle(!mobileToggle)}
+                  >
+                    <span></span>
+                  </span>
                 </nav>
+
               </div>
               <div className="cs_main_header_right">
                 <div className="cs_toolbox">

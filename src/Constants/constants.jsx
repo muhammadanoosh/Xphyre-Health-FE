@@ -1018,4 +1018,32 @@ export const states = [
     { name: 'West Virginia', value: 'WV' },
     { name: 'Wisconsin', value: 'WI' },
     { name: 'Wyoming', value: 'WY' }
-  ];
+];
+
+export const navLinks = [
+    { to: "/", label: "Home", exact: true },
+    { to: "/OurProcesses", label: "Our Processes" },
+    {
+        label: "Our Services",
+        subLinks: [
+            { to: "/C&C", label: "Credentialing and Contracting Services" },
+            { to: "/IEVS", label: "Insurance Eligibility Verification Services" },
+            { to: "/CA", label: "Chart Auditing" },
+            { to: "/MARS", label: "Medical Accounts Receivable Services" },
+            { to: "/MB&CS", label: "Medical Billing and Coding Services" },
+            { to: "/MIEAS", label: "Medical IT Equipment and Services" },
+            { to: "/OONNS", label: "Out of Networking Negotiation Services" },
+            { to: "/PBS", label: "Patient Billing Services" },
+            { to: "/PARAS", label: "Prior and Retro Authorization Services" },
+            { to: "/CAIC", label: "Clinics and Imaging Centers" },
+            { to: "/ER", label: "Emergency Rooms" },
+            { to: "/HS", label: "Healthcare Systems" },
+            { to: "/H", label: "Hospitals" },
+            { to: "/PP", label: "Private Practices" },
+            { to: "/UC", label: "Urgent Care" },
+        ]
+    },
+    { to: "/OurSolutions", label: "Our Solutions" },
+    { to: "/ContactUs", label: "Contact Us" },
+    { to: "/TheXphyreEdge", label: "The Xyphre Edge" },
+];

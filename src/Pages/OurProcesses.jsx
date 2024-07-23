@@ -16,7 +16,6 @@ export default function OurProcesses() {
         <>
             <BannerSectionStyle5
                 bgUrl="/images/doctors/banner_bg.svg"
-                imgUrl="/images/doctors/banner_img.png"
                 title="Our Processes"
             />
             <Section topMd={180} topLg={130} topXl={100}>

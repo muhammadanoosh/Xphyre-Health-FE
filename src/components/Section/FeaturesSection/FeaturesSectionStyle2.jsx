@@ -2,6 +2,8 @@ import React from 'react';
 import SectionHeading from '../../SectionHeading';
 import Spacing from '../../Spacing';
 import IconBoxStyle6 from '../../IconBox/IconBoxStyle6';
+import { why_choose_us} from '../../../assets/allAssets';
+
 
 export default function FeaturesSectionStyle2({ sectionTitle, imgUrl, data }) {
   return (
@@ -11,7 +13,7 @@ export default function FeaturesSectionStyle2({ sectionTitle, imgUrl, data }) {
         <div className="row flex-xl-row flex-column-reverse">
           <div className="col-xl-5">
             <div className="cs_pr_95 text-center cs_img_filed">
-              <img src={imgUrl} alt={sectionTitle} className="cs_radius_30" />
+              <img src={why_choose_us} alt={sectionTitle} className="cs_radius_30" />
             </div>
           </div>
           <div className="col-xl-7">

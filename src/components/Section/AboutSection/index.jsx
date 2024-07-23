@@ -1,13 +1,21 @@
 import React from 'react';
 import Spacing from '../../Spacing';
+import { useLocation } from 'react-router-dom';
+import { streamline_billing, maximize_your_practice } from '../../../assets/allAssets';
 
-export default function AboutSection({
-  imgUrl,
-  spiningImgUrl,
-  title,
-  subTitle,
-  featureList,
-}) {
+
+export default function AboutSection({ spiningImgUrl, title, subTitle, featureList, }) {
+
+  const location = useLocation();
+  let imageSource;
+
+  if (location.pathname.includes('OurProcesses')) {
+    imageSource = streamline_billing;
+  } else if (location.pathname.includes('OurSolutions')) {
+    imageSource = maximize_your_practice;
+  } 
+
+
   return (
     <section className="cs_about cs_style_1">
       <div className="container">
@@ -15,7 +23,7 @@ export default function AboutSection({
           <div className="col-lg-7">
             <Spacing md="55" />
             <div className="cs_about_img">
-              <img src={imgUrl} alt="About" />
+              <img src={imageSource} alt="About" />
               <div className="cs_about_mini_img">
                 <img
                   src={spiningImgUrl}
