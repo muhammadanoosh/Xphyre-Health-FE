@@ -202,32 +202,32 @@ export const brandData = [
 
 export const testimonialData = [
     {
-        text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
+        text: 'I am thoroughly impressed with Xphyre Medical Billing (XMB). They respond to my inquiries within hours, not days, and their commitment to collecting every penny owed from insurance companies is remarkable. They have quickly learned my chiropractic software, and their fees are very reasonable. Thanks to XMB, my life is significantly easier.',
         ratingNumber: '5',
         avatarImgUrl: '/images/home_1/avatar_2.png',
-        avatarName: 'PAULO HUBERT',
-        avatarDesignation: 'New York, USA',
+        avatarName: 'Ethan Bennet',
+        avatarDesignation: 'Balanced Life Chiropractic',
     },
     {
-        text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
+        text: 'Xphyre Medical Billing (XMB) has exceptional customer service. They are always available to answer my questions. Their professionalism and attention to detail have significantly reduced the stress of managing medical billing in my practice. I highly recommend XMB to any healthcare provider looking for reliable and responsive billing services.',
         ratingNumber: '4.5',
         avatarImgUrl: '/images/home_1/avatar_2.png',
-        avatarName: 'PAULO HUBERT',
-        avatarDesignation: 'New York, USA',
+        avatarName: ' Sarah Johnson',
+        avatarDesignation: 'FirstResponse Urgent Care',
     },
     {
-        text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
-        ratingNumber: '5',
+        text: `XMB has drastically improved our revenue cycle management. Their expertise in handling complex claims and appeals has ensured we receive timely payments. They also provide detailed reports, helping us keep track of our financial health. XMB's efficiency and transparency have made a noticeable difference in our practice.`,
+        ratingNumber: '4',
         avatarImgUrl: '/images/home_1/avatar_2.png',
-        avatarName: 'PAULO HUBERT',
-        avatarDesignation: 'New York, USA',
+        avatarName: 'Michael Brown',
+        avatarDesignation: 'Maternal Health Associates',
     },
     {
-        text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
+        text: `XMB has been instrumental in optimizing our coding practices. Their team of certified coders ensures accurate and compliant coding, which has maximized our reimbursements. Their dedication to staying current with coding guidelines has been invaluable to our practice. We highly recommend XMB for their coding expertise.`,
         ratingNumber: '4.5',
         avatarImgUrl: '/images/home_1/avatar_2.png',
-        avatarName: 'PAULO HUBERT',
-        avatarDesignation: 'New York, USA',
+        avatarName: 'Laura Martinez',
+        avatarDesignation: 'HeartCare Specialists',
     },
 ];
 

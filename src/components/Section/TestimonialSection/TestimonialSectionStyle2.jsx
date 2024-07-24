@@ -8,7 +8,6 @@ import { testimonialData } from '../../../Constants/constants';
 export default function TestimonialSectionStyle2({
   sectionTitle,
   sectionTitleUp,
-  data,
 }) {
   return (
     <div className="container">

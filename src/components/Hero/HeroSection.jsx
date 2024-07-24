@@ -1,5 +1,4 @@
 import React from 'react';
-import VideoModal from '../VideoModal';
 import { heroBanner } from '../../assets/allAssets';
 
 
@@ -34,13 +33,13 @@ export default function HeroSection({
       <div className="container">
         <div className="cs_hero_bottom">
           <div className="cs_hero_bottom_left">
-            <div className="cs_hero_btn_wrap">
+            {/* <div className="cs_hero_btn_wrap">
               <VideoModal
                 videoUrl={videoUrl}
                 videoBtnText={videoBtnText}
                 variant="cs_white_color"
               />
-            </div>
+            </div> */}
           </div>
           <div className="cs_hero_bottom_right">
             {funfactList?.length > 0 && (

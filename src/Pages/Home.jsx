@@ -46,7 +46,7 @@ export default function HomeStyle2() {
         bottomXl={110}
       >
         <TestimonialSectionStyle2
-          sectionTitle="What Our Patients Say <br /> About Us"
+          sectionTitle="What Our Clients Say."
           sectionTitleUp="TESTIMONIALS"
         />
       </Section>
