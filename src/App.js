@@ -14,7 +14,7 @@ import PriorAndRetroAuthorizationServices from './Pages/PriorAndRetroAuthorizati
 import ClinicsAndImagingCenters from './Pages/ClinicsAndImagingCenters';
 import EmergencyRooms from './Pages/EmergencyRooms';
 import HealthcareSystems from './Pages/HealthcareSystems';
-import Hospitals from './Pages/Hospitals';
+// import Hospitals from './Pages/Hospitals';
 import PrivatePractices from './Pages/PrivatePractices';
 import UrgentCare from './Pages/UrgentCare';
 import TheXphyreEdge from './Pages/TheXphyreEdge';
@@ -49,7 +49,7 @@ function App() {
         <Route path="CAIC" element={<ClinicsAndImagingCenters />} />
         <Route path="ER" element={<EmergencyRooms />} />
         <Route path="HS" element={<HealthcareSystems />} />
-        <Route path="H" element={<Hospitals />} />
+        {/* <Route path="H" element={<Hospitals />} /> */}
         <Route path="PP" element={<PrivatePractices />} />
         <Route path="UC" element={<UrgentCare />} />
         <Route path="TheXphyreEdge" element={<TheXphyreEdge />} />

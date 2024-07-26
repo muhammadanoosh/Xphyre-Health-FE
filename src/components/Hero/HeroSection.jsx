@@ -4,7 +4,9 @@ import { heroBanner } from '../../assets/allAssets';
 
 
 export default function HeroSection({
-  title,
+  title1,
+  title2,
+  title3,
   subTitle,
   videoBtnText,
   videoUrl,
@@ -24,7 +26,7 @@ export default function HeroSection({
     >
       <div className="container">
         <div className="cs_hero_text">
-          <h1 className="cs_hero_title cs_hero_color cs_fs_84">{title}</h1>
+          <h1 className="cs_hero_title cs_hero_color cs_fs_84">{title1}<br/>{title2}<br/>{title3}</h1>
           <div className="cs_hero_text_in">
             <p className="cs_hero_subtitle cs_hero_color">{subTitle}</p>
           </div>

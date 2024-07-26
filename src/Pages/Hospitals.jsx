@@ -16,7 +16,7 @@ export default function Hospitals() {
             <BannerSectionStyle5
                 bgUrl="/images/doctors/banner_bg.svg"
                 imgUrl="/images/doctors/banner_img.png"
-                title="Healthcare Systems"
+                title="Hospitals"
             />
             <Section topMd={200} topLg={150} topXl={110}>
                 <FeaturesSectionStyle4

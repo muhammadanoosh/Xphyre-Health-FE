@@ -16,15 +16,17 @@ export default function HomeStyle2() {
   return (
     <>
       <HeroSection
-        title="Empower Your Practice with Medical Billing Services"
+        title1="Empower Your"
+        title2="Practice with"
+        title3="Medical Billing Services"
         subTitle="Discover Custom Solutions to Redefine Your Practice's Financial Health"
         videoBtnText="See how we work"
         videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
         funfactList={[
-          { number: '80%', title: 'Accuracy Rate' },
-          { number: '95%', title: 'Collection Rate' },
-          { number: '89%', title: 'Satisfied Clients ' },
-          { number: '90%', title: 'Claim Approval' },
+          { number: '80%', title: 'Accuracy Rate'},
+          { number: '95%', title: 'Collection Rate'},
+          { number: '89%', title: 'Satisfied Clients'},
+          { number: '90%', title: 'Claim Approval'},
         ]}
       />
   {/* About Section  */}

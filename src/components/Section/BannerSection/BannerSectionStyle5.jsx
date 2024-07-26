@@ -2,7 +2,26 @@ import React from 'react';
 import parse from 'html-react-parser';
 import { useLocation } from 'react-router-dom';
 import { BannerBack } from '../../../assets/allAssets';
-import { our_process, our_solutions, contact_us, } from '../../../assets/allAssets';
+import {
+  our_process,
+  our_solutions,
+  contact_us,
+  CA,
+  CandC,
+  // H,
+  HS,
+  CAIC,
+  ER,
+  IE,
+  MARS,
+  MBACS,
+  OONNS,
+  PARAS,
+  PBS,
+  MIEAS,
+  PP,
+  UC
+} from '../../../assets/allAssets';
 
 export default function BannerSectionStyle5({ title, }) {
 
@@ -15,9 +34,42 @@ export default function BannerSectionStyle5({ title, }) {
     imageSource = our_solutions;
   } else if (location.pathname.includes('ContactUs')) {
     imageSource = contact_us;
-  }else if (location.pathname.includes('TheXphyreEdge')) {
+  } else if (location.pathname.includes('TheXphyreEdge')) {
     imageSource = our_solutions;
+  } else if (location.pathname.includes('CA')) {
+    imageSource = CA;
+  } else if (location.pathname.includes('IEVS')) {
+    imageSource = IE;
+  } else if (location.pathname.includes('MARS')) {
+    imageSource = MARS;
+  } else if (location.pathname.includes('MB&CS')) {
+    imageSource = MBACS;
+  } else if (location.pathname.includes('OONNS')) {
+    imageSource = OONNS;
+  } else if (location.pathname.includes('C&C')) {
+    imageSource = CandC;
+  } else if (location.pathname.includes('PBS')) {
+    imageSource = PBS;
+  } else if (location.pathname.includes('PARAS')) {
+    imageSource = PARAS;
+  } 
+  // else if (location.pathname.includes('H')) {
+  //   imageSource = H;
+  // }
+   else if (location.pathname.includes('HS')) {
+    imageSource = HS;
+  } else if (location.pathname.includes('ER')) {
+    imageSource = ER;
+  } else if (location.pathname.includes('CAIC')) {
+    imageSource = CAIC;
+  }else if (location.pathname.includes('MIEAS')) {
+    imageSource = MIEAS;
+  }else if (location.pathname.includes('UC')) {
+    imageSource = UC;
+  }else if (location.pathname.includes('PP')) {
+    imageSource = PP;
   }
+
 
 
   return (
