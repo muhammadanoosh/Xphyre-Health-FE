@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export default function VideoModal({ videoUrl, videoBtnText, variant }) {
   const [iframeSrc, setIframeSrc] = useState('about:blank');
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   const handelClick = () => {
     setIframeSrc(`${videoUrl}`);
     setToggle(!toggle);

@@ -32,7 +32,7 @@ const menuDataThree = [
 ];
 
 const menuDataFour = [
-  { title: 'Hospitals', href: '/H' },
+  // { title: 'Hospitals', href: '/H' },
   { title: 'Private Practices', href: '/PP' },
   { title: 'Urgent Care', href: '/UC' },
   { title: 'Contact Us', href: '/ContactUs' },
