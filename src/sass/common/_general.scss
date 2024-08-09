@@ -612,7 +612,7 @@ textarea::placeholder,
 input::placeholder,
 .cs_form_field::placeholder,
 .cs_form_field_2::placeholder {
-  color: $accent-four;
+  color: gray;
 }
 
 textarea:-ms-input-placeholder,
@@ -3135,3 +3135,4 @@ a.ui-button:active,
   white-space: normal;
   overflow: visible;
 }
+

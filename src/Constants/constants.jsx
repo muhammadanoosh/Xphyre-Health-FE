@@ -4,7 +4,7 @@ import icon_1 from '../assets/departments/icon_1.svg';
 import compassion from '../assets/home_4/compassion.svg';
 import calendar_white from '../assets/icons/calendar_white.svg';
 import brandIcon from '../assets/brand_1.png';
-import {avatar_boy,avatar_girl} from '../assets/allAssets';
+import { avatar_boy, avatar_girl } from '../assets/allAssets';
 
 
 export const workingProcessData = [
@@ -1047,4 +1047,12 @@ export const navLinks = [
     { to: "/OurSolutions", label: "Our Solutions" },
     { to: "/ContactUs", label: "Contact Us" },
     { to: "/TheXphyreEdge", label: "The Xyphre Edge" },
+];
+
+export const monthlyCollections = [
+    "$0 - $25,000",
+    "$25,000 - $50,000",
+    "$50,000 - $100,000",
+    "$100,000 - $250,000",
+    "$250,000+"
 ];
