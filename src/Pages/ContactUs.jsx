@@ -1,9 +1,9 @@
 import React from 'react';
 import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import ContactForm from '../components/ContactForm';
 import Section from '../components/Section';
 import ContactInfoSection from '../components/Section/ContactInfoSection';
 import { pageTitle } from '../helpers/PageTitle';
-import AppointmentForm from '../components/AppointmentForm';
 
 
 export default function ContactUs() {
@@ -19,7 +19,7 @@ export default function ContactUs() {
       <div className="container cs_mt_minus_110">
         <div className="row">
           <div className="col-lg-10 offset-lg-1">
-            <AppointmentForm />
+            <ContactForm />
           </div>
         </div>
       </div>

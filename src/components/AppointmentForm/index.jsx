@@ -211,8 +211,7 @@ export default function AppointmentForm() {
   };
   return (
     <>
-      <div className='cs_contact_form cs_style_1 cs_white_bg cs_radius_20'>
-        <form className="row cs_white_bg" onSubmit={handleSubmit}>
+        <form className="row" onSubmit={handleSubmit}>
           <div className="col-lg-6">
             <label className="cs_input_label cs_heading_color">First Name</label>
             <input
@@ -341,7 +340,6 @@ export default function AppointmentForm() {
         </form>
 
         <Modal visible={modal.visible} message={modal.message} onClose={closeModal} />
-      </div>
     </>
 
 
