@@ -13,7 +13,7 @@ export default function AboutSection({ spiningImgUrl, title, subTitle, featureLi
     imageSource = streamline_billing;
   } else if (location.pathname.includes('OurSolutions')) {
     imageSource = maximize_your_practice;
-  } 
+  }
 
 
   return (
@@ -24,7 +24,7 @@ export default function AboutSection({ spiningImgUrl, title, subTitle, featureLi
             <Spacing md="55" />
             <div className="cs_about_img">
               <img src={imageSource} alt="About" />
-              <div className="cs_about_mini_img">
+              {/* <div className="cs_about_mini_img">
                 <img
                   src={spiningImgUrl}
                   alt="Mini"
@@ -35,7 +35,7 @@ export default function AboutSection({ spiningImgUrl, title, subTitle, featureLi
                   alt="Right"
                   className="cs_right_icon"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-lg-5">
@@ -46,6 +46,7 @@ export default function AboutSection({ spiningImgUrl, title, subTitle, featureLi
                 <h3 className="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32 cs_main_heading_color ">
                   {subTitle}
                 </h3>
+
               </div>
               <Spacing md="72" lg="72" />
               <ul className="cs_about_text_list">
@@ -65,13 +66,22 @@ export default function AboutSection({ spiningImgUrl, title, subTitle, featureLi
                         />
                       </svg>
                     </i>
-                    <h3 className="cs_normal cs_fs_32 cs_body_color para_color">
+                    {/* <h3 className="cs_normal cs_fs_32 cs_body_color para_color">
                       {item.featureListTitle}
-                    </h3>
+                    </h3> */}
                     <p className="m-0 para_color">{item.featureListSubTitle}</p>
                   </li>
                 ))}
               </ul>
+              <a href="/ContactUs">
+                <button className="cs_btn cs_style_1" type="submit" style={{ position: "relative", top: "2rem" }}>
+                  <span>Call Us Today</span>
+                  <i>
+                    <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                    <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                  </i>
+                </button>
+              </a>
             </div>
           </div>
         </div>

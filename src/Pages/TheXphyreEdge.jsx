@@ -5,7 +5,7 @@ import FeaturesSectionStyle5 from '../components/Section/FeaturesSection/Feature
 import Section from '../components/Section';
 import { pageTitle } from '../helpers/PageTitle';
 import Spacing from '../components/Spacing';
-import { TheXypherEdgedata } from '../Constants/constants';
+import { TheXphyreEdgedata } from '../Constants/constants';
 
 
 
@@ -16,22 +16,22 @@ export default function TheXphyreEdge() {
             <BannerSectionStyle5
                 bgUrl="/images/doctors/banner_bg.svg"
                 imgUrl="/images/doctors/banner_img.png"
-                title="The Xypher Edge"
+                title="The Xphyre Edge"
             />
             <Section
-        topMd={185}
-        topLg={140}
-        topXl={100}
-        bottomMd={200}
-        bottomLg={150}
-        bottomXl={100}
-        className="cs_gray_bg_1"
-      >
-        <FeaturesSectionStyle5
-          sectionTitle="Our Values"
-          data={TheXypherEdgedata}
-        />
-      </Section>
+                topMd={185}
+                topLg={140}
+                topXl={100}
+                bottomMd={200}
+                bottomLg={150}
+                bottomXl={100}
+                className="cs_gray_bg_1"
+            >
+                <FeaturesSectionStyle5
+                    sectionTitle="Experience the Xphyre Health Difference to Streamline Healthcare Billing "
+                    data={TheXphyreEdgedata}
+                />
+            </Section>
             <Spacing md="200" lg="10" xl="150" />
             <Section className="cs_footer_margin_0">
                 <BannerSectionStyle4

@@ -34,7 +34,8 @@ export default function HomeStyle2() {
         <AboutSectionStyle3
           titleUp="ABOUT US"
           title="We’ll take care of your payments"
-          subTitle="With a focus on client empowerment, timely payments, and transparent updates, we ensure your financial well-being. Our expert team provides personalized support, efficient collections, and direct access to billing managers. We take care of your complete statement xcycle, from generating patient statements to answering any questions your patients have regarding them."
+          subTitle="Experience the simplicity of integrating our top-notch medical billing services into your practice with Xpyhre Health. We offer a holistic billing solution to support your practice’s growth by alleviating repetitive administrative tasks and speeding up claim submissions. 
+          Our tailored services and expert medical billing specialists are proficient at eliminating billing errors and maximizing workplace efficiency. With attention to detail and a commitment to excellence, Xphyre Health helps you focus on what matters most – delivering excellent patient care!"
         />
       </Section>
       <Section
@@ -76,7 +77,7 @@ export default function HomeStyle2() {
           sectionTitleUp="BOOK AN"
         />
       </Section>
-      <Spacing md="150" lg="7" xl="100" />
+      {/* <Spacing md="150" lg="7" xl="100" /> */}
     </>
   );
 }

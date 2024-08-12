@@ -33,11 +33,13 @@ export default function AppointmentForm() {
         };
       });
       validateName(name, value);
+      clearError(name);
     } else {
       setFormData({ ...formData, [name]: value });
 
       if (name === 'email') validateEmail(value);
       if (name === 'state') validateState(value);
+      clearError(name);
     }
   };
 
@@ -46,6 +48,7 @@ export default function AppointmentForm() {
     const formattedValue = formatPhoneNumber(value);
     setFormData({ ...formData, [name]: formattedValue });
     validatePhoneNumber(formattedValue);
+    clearError(name);
   };
 
   const handleDateChange = (selectedDate) => {
@@ -60,13 +63,13 @@ export default function AppointmentForm() {
       datetime: selectedDate
     });
 
-    // Clear the validation error if a valid date is selected
-    if (errors.datetime) {
-      setErrors({
-        ...errors,
-        datetime: '' // Clear the error for datetime
-      });
-    }
+    clearError('datetime');
+  };
+
+  const handleMonthlyCollectionChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+    clearError(name);
   };
 
   const validateName = (name) => {
@@ -144,11 +147,7 @@ export default function AppointmentForm() {
       errors.monthlyCollections = 'Invalid monthly collections';
       valid = false;
     }
-
-    // Set errors in state
     setErrors(errors);
-
-    console.log(valid);
     return valid;
   };
 
@@ -163,21 +162,18 @@ export default function AppointmentForm() {
     return phoneNumber;
   };
 
+  const clearError = (fieldName) => {
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [fieldName]: '', // Clear the specific field error
+    }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    let valid = true;
-    let isValid = validateForm(formData)
+    let isValid = validateForm(formData);
 
-    for (const error in errors) {
-      if (errors[error]) {
-        valid = false;
-        break;
-      }
-    }
-    console.log(isValid);
-
-
-    if (valid) {
+    if (isValid) {
       axios.post('https://xphyre-health-be.netlify.app/.netlify/functions/api/send_email', {
         // http://localhost:5000/api/send_email
         // https://xphyre-health-be.netlify.app/.netlify/functions/api/send_email
@@ -185,7 +181,7 @@ export default function AppointmentForm() {
         fullname: `${formData.fullname.split(' ')[0]} ${formData.fullname.split(' ')[1] || ''}`,
       })
         .then(response => {
-          setModal({ visible: true, message: response.data.message || 'Thankyou for your details our team will contact you as soon as possible' });
+          setModal({ visible: true, message: response.data.message || 'Thank you for your details. Our team will contact you as soon as possible.' });
         })
         .catch(error => {
           setModal({ visible: true, message: 'An error occurred. Please try again.' });
@@ -200,7 +196,6 @@ export default function AppointmentForm() {
       onClick={onClick}
       ref={ref}
       value={value}
-      onChange={() => { }} // No onChange needed here
       placeholder="Select date and time"
       readOnly
     />
@@ -213,7 +208,7 @@ export default function AppointmentForm() {
     <>
         <form className="row" onSubmit={handleSubmit}>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">First Name</label>
+            <label className="cs_input_label cs_heading_color">First Name*</label>
             <input
               type="text"
               className="cs_form_field"
@@ -225,7 +220,7 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Last Name</label>
+            <label className="cs_input_label cs_heading_color">Last Name*</label>
             <input
               type="text"
               className="cs_form_field"
@@ -237,7 +232,7 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Email</label>
+            <label className="cs_input_label cs_heading_color">Email*</label>
             <input
               type="email"
               className="cs_form_field"
@@ -250,7 +245,7 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Phone Number</label>
+            <label className="cs_input_label cs_heading_color">Phone Number*</label>
             <input
               type="text"
               className="cs_form_field"
@@ -263,7 +258,7 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">State</label>
+            <label className="cs_input_label cs_heading_color">State*</label>
             <select
               className="cs_form_field"
               name="state"
@@ -280,12 +275,12 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">monthlyCollections</label>
+            <label className="cs_input_label cs_heading_color">Monthly Collections*</label>
             <select
               className="cs_form_field"
               name="monthlyCollections"
               value={formData.monthlyCollections}
-              onChange={handleChange}
+              onChange={handleMonthlyCollectionChange}
             >
               {monthlyCollections.map((monthlyCollections) => (
                 <option key={monthlyCollections.value} value={monthlyCollections.value}>
@@ -296,22 +291,8 @@ export default function AppointmentForm() {
             {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
-          {/* <div className="col-lg-6">
-          <label className="cs_input_label cs_heading_color">Select a suitable time</label>
-          <input
-            type="datetime-local"
-            className="cs_form_field cs_datetime_scroll"
-            name="datetime"
-            value={formData.datetime}
-            onChange={handleChange}
-            min={getCurrentDateTime()}
-          />
-          {errors.datetime && <p style={{ color: 'red' }}>{errors.datetime}</p>}
-          <div className="cs_height_42 cs_height_xl_25" />
-        </div> */}
-
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Select a suitable time</label>
+            <label className="cs_input_label cs_heading_color">Select a suitable time*</label>
             <DatePicker
               selected={formData.datetime}
               onChange={handleDateChange}

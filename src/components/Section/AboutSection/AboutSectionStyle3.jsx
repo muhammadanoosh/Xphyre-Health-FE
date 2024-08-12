@@ -38,6 +38,7 @@ export default function AboutSectionStyle3({
             </linearGradient>
           </defs>
         </svg>
+
       </div>
       <Spacing md="190" xl="150" lg="105" />
       <div className="container">
@@ -46,6 +47,17 @@ export default function AboutSectionStyle3({
             <SectionHeading titleUp={titleUp} title={title} />
             <Spacing md="85" xl="40" lg="30" />
             <p className="m-0 para_color">{subTitle}</p>
+            <div className="col-lg-12">
+              <a href="/ContactUs">
+                <button className="cs_btn cs_style_1" type="submit" style={{ position: "relative", top: "2rem" }}>
+                  <span>Contact Us Now</span>
+                  <i>
+                    <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                    <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                  </i>
+                </button>
+              </a>
+            </div>
           </div>
           <div className="col-xl-6">
             <div className="cs_about_img">

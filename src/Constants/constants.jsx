@@ -968,6 +968,44 @@ export const TheXypherEdgedata = [
 ];
 
 
+export const TheXphyreEdgedata = [
+    {
+        title: 'Certified and Experienced',
+        description:
+            `With a decade of experience and intimate knowledge of RCM and medical billing, our certified and trained experts help medical practices take their productivity and efficiency to the next level.`
+    },
+    {
+        title: 'Minimized Billing Errors',
+        description:
+            `Wave goodbye to week-long delays and billing mistakes with our medical billing and coding specialists! 
+            Our experienced billers ensure faster payments and fewer billing mistakes.`
+    },
+    {
+        title: 'Enhanced Patient Satisfaction',
+        description:
+            `Our medical billing and coding consultants deliver streamlined and efficient billing processes.
+            This means quicker claim resolutions and higher patient satisfaction!`
+    },
+    {
+        title: 'Unmatched Compliance',
+        description:
+            `We recognize how essential staying up-to-date with new industry standards and technology is.
+            Thus, Xphyre Health’s experts adhere to the highest compliance and data security standards, protecting your practice and patients.`
+    },
+    {
+        title: 'Instant Claim Submissions',
+        description:
+            `Our proficient medical billers and coders help save time and increase collection rates with quicker claim resolutions.
+             We minimize delays and denial risks by filing and processing claims efficiently while maximizing profitability.`
+    },
+    {
+        title: 'Unmatched Customer Support',
+        description:
+            `Our friendly and dedicated account managers deliver unparalleled support to ensure on-time claim processing, client verification, and billing.
+            Besides, if you have any queries, our experts are more than happy to assist!`
+    },
+];
+
 export const states = [
     { name: 'Alabama', value: 'AL' },
     { name: 'Alaska', value: 'AK' },
@@ -1046,7 +1084,7 @@ export const navLinks = [
     },
     { to: "/OurSolutions", label: "Our Solutions" },
     { to: "/ContactUs", label: "Contact Us" },
-    { to: "/TheXphyreEdge", label: "The Xyphre Edge" },
+    { to: "/TheXphyreEdge", label: "The Xphyre Edge" },
 ];
 
 export const monthlyCollections = [

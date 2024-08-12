@@ -16,8 +16,17 @@ export default function FeaturesSectionStyle5({ sectionTitle, data }) {
               <IconBoxStyle13 {...item} />
             </div>
           ))}
-        </div>
+        <a href="/ContactUs">
+          <button className="cs_btn cs_style_1" type="submit" style={{ position: "relative", top: "2rem" }}>
+            <span>Let’s Talk</span>
+            <i>
+              <img src="/images/icons/arrow_white.svg" alt="Icon" />
+              <img src="/images/icons/arrow_white.svg" alt="Icon" />
+            </i>
+          </button>
+        </a>
       </div>
+        </div>
     </div>
   );
 }
