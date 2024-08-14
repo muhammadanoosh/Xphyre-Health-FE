@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AboutSectionStyle2({ title, subTitle, imgUrl }) {
+export default function AboutSectionStyle2({ title, imgUrl, p1, p2, p3 }) {
   return (
     <section className="cs_shape_wrap">
       <div className="cs_shape_1 cs_position_5" />
@@ -8,9 +8,11 @@ export default function AboutSectionStyle2({ title, subTitle, imgUrl }) {
         <div className="row align-items-center">
           <div className="col-lg-4">
             <div className="cs_section_heading cs_style_1">
-              <h2 className="cs_section_title cs_fs_72 m-0">{title}</h2>
+              <h2 className="cs_section_title cs_fs_72 m-0 cs_main_heading_color ">{title}</h2>
               <div className="cs_height_54 cs_height_xl_30" />
-              <p className="m-0">{subTitle}</p>
+              <p className="m-0 para_color" style={{ textAlign: "justify" }}>{p1}</p>
+              <p className="m-0 para_color" style={{ textAlign: "justify" }}>{p2}</p>
+              <p className="m-0 para_color" style={{ textAlign: "justify" }}>{p3}</p>
               <div className="cs_height_120 cs_height_xl_60" />
             </div>
           </div>

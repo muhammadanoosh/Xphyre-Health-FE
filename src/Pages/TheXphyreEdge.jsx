@@ -17,6 +17,7 @@ export default function TheXphyreEdge() {
                 bgUrl="/images/doctors/banner_bg.svg"
                 imgUrl="/images/doctors/banner_img.png"
                 title="The Xphyre Edge"
+                subTitle=""
             />
             <Section
                 topMd={185}

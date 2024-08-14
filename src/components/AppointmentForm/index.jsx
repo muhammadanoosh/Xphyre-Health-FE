@@ -308,6 +308,20 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
 
+          <div className="col-lg-6">
+            <label className="cs_input_label cs_heading_color">Time zone</label>
+            <input
+              type="text"
+              value={formData.timeZone}
+              className="cs_form_field"
+              placeholder="John"
+              name="timeZone"
+              readOnly
+            />
+            {errors.lastName && <p style={{ color: 'red' }}>{errors.lastName}</p>}
+            <div className="cs_height_42 cs_height_xl_25" />
+          </div>
+
           <div className="col-lg-12">
             <button className="cs_btn cs_style_1" type="submit">
               <span>Submit</span>

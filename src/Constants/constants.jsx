@@ -170,6 +170,119 @@ export const WhyUsData = [
     },
 ];
 
+
+export const WhyUsDataCAIC = [
+    {
+        iconUrl: compassion,
+        title: `A deep understanding of the healthcare industry's challenges `,
+        subTitle: ``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Over a decade of experience and access to top-notch technology',
+        subTitle: ``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Dedicated services to drive workplace efficiency and profitability',
+        subTitle: ``,
+    },
+];
+
+export const WhyUsDataER = [
+    {
+        iconUrl: compassion,
+        title: `Highly trained and experienced billing and coding specialists.`,
+        subTitle: ``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Reliable services and access to cutting-edge technology.',
+        subTitle: ``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Personalized services to increase revenue and reduce out-of-pocket expenses.',
+        subTitle: ``,
+    },
+];
+export const WhyUsDataHS = [
+    {
+        iconUrl: compassion,
+        title: `Certified experts with over a decade of experience`,
+        subTitle: ``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Access to state-of-the-art technology and tools',
+        subTitle: ``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Top-notch, error-free, and reliable billing, coding, and collection services',
+        subTitle: ``,
+    },
+    {
+        iconUrl: compassion,
+        title: `Tailored and scalable services to support your healthcare system's growing needs`,
+        subTitle: ``,
+    },
+];
+
+export const WhyUsDataH = [
+    {
+        iconUrl: compassion,
+        title: `Stay ahead of the curve with cutting-edge technology and an up-to-date patient database`,
+        subTitle:``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Maximize revenue and minimize out-of-pocket costs by identifying lost revenue causes',
+        subTitle:``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Increase patient flow and satisfaction by focusing on core business tasks and round-the-clock IT support',
+        subTitle: ``,
+    },
+];
+
+export const WhyUsDataPP = [
+    {
+        iconUrl: compassion,
+        title: `A track record of success in optimizing private practice's efficiency `,
+        subTitle:``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Access to cutting-edge tech and innovative approaches',
+        subTitle:``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Holistic revenue management services to drive productivity and profitability',
+        subTitle: ``,
+    },
+];
+
+export const WhyUsDataUC = [
+    {
+        iconUrl: compassion,
+        title: `Extensive industry expertise and innovative solutions`,
+        subTitle:``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Commitment to excellence and state-of-the-art tech',
+        subTitle:``,
+    },
+    {
+        iconUrl: compassion,
+        title: 'Tailored approach to maximize reimbursement and revenue ',
+        subTitle: ``,
+    },
+];
+
 export const brandData = [
     {
         imgUrl: brandIcon,
@@ -1074,10 +1187,10 @@ export const navLinks = [
             { to: "/OONNS", label: "Out of Networking Negotiation Services" },
             { to: "/PBS", label: "Patient Billing Services" },
             { to: "/PARAS", label: "Prior and Retro Authorization Services" },
-            { to: "/HS", label: "Healthcare Systems" },
+            { to: "/HCS", label: "Healthcare Systems" },
             { to: "/CAIC", label: "Clinics and Imaging Centers" },
             { to: "/ER", label: "Emergency Rooms" },
-            // { to: "/H", label: "Hospitals" },
+            { to: "/H", label: "Hospitals" },
             { to: "/PP", label: "Private Practices" },
             { to: "/UC", label: "Urgent Care" },
         ]

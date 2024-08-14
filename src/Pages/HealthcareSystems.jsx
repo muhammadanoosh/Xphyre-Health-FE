@@ -2,10 +2,11 @@ import React from 'react';
 import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
 import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
 import FeaturesSectionStyle4 from '../components/Section/FeaturesSection/FeaturesSectionStyle4';
+import FeaturesSectionStyle2 from '../components/Section/FeaturesSection/FeaturesSectionStyle2';
 import Section from '../components/Section';
 import { pageTitle } from '../helpers/PageTitle';
 import Spacing from '../components/Spacing';
-import { HSdata } from '../Constants/constants';
+import { HSdata,WhyUsDataHS } from '../Constants/constants';
 
 
 
@@ -17,11 +18,19 @@ export default function HealthcareSystems() {
                 bgUrl="/images/doctors/banner_bg.svg"
                 imgUrl="/images/doctors/banner_img.png"
                 title="Healthcare Systems"
+                subTitle=""
             />
             <Section topMd={200} topLg={150} topXl={110}>
                 <FeaturesSectionStyle4
                     sectionTitle="Our Comprehensive Services"
                     data={HSdata}
+                />
+            </Section>
+            <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
+                <FeaturesSectionStyle2
+                    sectionTitle="Why Choose Xphyre Health for Your Healthcare System?"
+                    imgUrl="images/about/why_choose_us.jpeg"
+                    data={WhyUsDataHS}
                 />
             </Section>
             <Spacing md="200" lg="10" xl="150" />

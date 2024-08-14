@@ -5,6 +5,8 @@ import FeaturesSectionStyle4 from '../components/Section/FeaturesSection/Feature
 import Section from '../components/Section';
 import { pageTitle } from '../helpers/PageTitle';
 import Spacing from '../components/Spacing';
+import FeaturesSectionStyle2 from '../components/Section/FeaturesSection/FeaturesSectionStyle2';
+import { WhyUsDataCAIC } from '../Constants/constants';
 
 import { CAICdata } from '../Constants/constants';
 
@@ -18,11 +20,19 @@ export default function ClinicsAndImagingCenters() {
                 bgUrl="/images/doctors/banner_bg.svg"
                 imgUrl="/images/doctors/banner_img.png"
                 title="Clinics and Imaging Centers"
+                subTitle=""
             />
             <Section topMd={200} topLg={150} topXl={110}>
                 <FeaturesSectionStyle4
                     sectionTitle="Discover Our Diverse Services"
                     data={CAICdata}
+                />
+            </Section>
+            <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
+                <FeaturesSectionStyle2
+                    sectionTitle="Why Choose Xphyre Health?"
+                    imgUrl="images/about/why_choose_us.jpeg"
+                    data={WhyUsDataCAIC}
                 />
             </Section>
             <Spacing md="200" lg="10" xl="150" />

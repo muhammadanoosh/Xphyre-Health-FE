@@ -26,8 +26,8 @@ import avatar_boy from './Avatarboy.jpg';
 import avatar_girl from './AvatarGirl.jpg';
 import CA from './servicesbanners/CA.jpg';
 import CandC from './servicesbanners/C&C.jpg';
-// import H from './servicesbanners/H.jpg';
-import HS from './servicesbanners/HS.jpg';
+import H from './servicesbanners/H.jpg';
+import HCS from './servicesbanners/HCS.jpg';
 import CAIC from './servicesbanners/CAIC.jpg';
 import ER from './servicesbanners/ER.jpg';
 import IE from './servicesbanners/IE.jpg';
@@ -71,8 +71,8 @@ export {
     avatar_girl,
     CA,
     CandC,
-    // H,
-    HS,
+    H,
+    HCS,
     CAIC,
     ER,
     IE,

@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactInfoWidget from '../Widget/ContactInfoWidget';
 import MenuWidget from '../Widget/MenuWidget';
-import SocialWidget from '../Widget/SocialWidget';
+// import SocialWidget from '../Widget/SocialWidget';
 // import Newsletter from '../Widget/Newsletter';
 import TextWidget from '../Widget/TextWidget';
 // import footerLogo from '../../assets/footer_logo_bg.svg';
@@ -28,11 +28,11 @@ const menuDataThree = [
   { title: 'Prior and Retro Authorization Services', href: '/PARAS' },
   { title: 'Clinics and Imaging Centers', href: '/CAIC' },
   { title: 'Emergency Rooms', href: '/ER' },
-  { title: 'Healthcare Systems', href: '/HS' }
+  { title: 'Healthcare Systems', href: '/HCS' }
 ];
 
 const menuDataFour = [
-  // { title: 'Hospitals', href: '/H' },
+  { title: 'Hospitals', href: '/H' },
   { title: 'Private Practices', href: '/PP' },
   { title: 'Urgent Care', href: '/UC' },
   { title: 'Contact Us', href: '/ContactUs' },
@@ -45,16 +45,6 @@ export default function Footer() {
     <footer className="cs_footer cs_style_1 cs_white_color">
       <div
         className="cs_footer_logo_wrap cs_footer_background" style={{height:"100%"}}>
-        {/* <div
-          className="cs_footer_brand"
-          style={{ backgroundImage:  `url(${footerLogo})` }}
-        >
-          <img
-            src={logo}
-            alt="Logo Icon"
-            className="cs_footer_brand_icon"
-          />
-        </div> */}
       </div>
       <div className="cs_footer_main">
         <div className="container">
@@ -98,11 +88,11 @@ export default function Footer() {
       </div>
       <div className="cs_footer_bottom cs_accent_bg">
         <div className="container">
-          <div className="cs_footer_bottom_in">
-            <SocialWidget />
-            <div className="cs_white_text" style={{fontSize:"0.8rem"}}>
+            <div className="cs_white_text" style={{fontSize:"0.8rem",paddingTop:"5px" ,  textAlign:"center"}}>
               Copyright © 2024 Xphyre Health. All rights reserved.
             </div>
+          <div className="cs_footer_bottom_in" >
+            {/* <SocialWidget /> */}
           </div>
         </div>
       </div>

@@ -16,6 +16,7 @@ export default function OurSolutions() {
                 bgUrl="/images/doctors/banner_bg.svg"
                 imgUrl="/images/doctors/banner_img.png"
                 title="Our Solutions"
+                subTitle=""
             />
             <Section topMd={180} topLg={130} topXl={100}>
                 <AboutSection

@@ -44,6 +44,15 @@ export default function FeatureCarousel({ sectionTitle, data }) {
         <div className="row">
           <div className="col-lg-4">
             <SectionHeading title={sectionTitle} />
+            <a href="/ContactUs">
+              <button className="cs_btn cs_style_1" type="submit" style={{ position: "relative", top: "2rem" }}>
+                <span>Book Your Consultation Now</span>
+                <i>
+                  <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                  <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                </i>
+              </button>
+            </a>
             <Spacing md="200" lg="10" xl="150" />
             <Spacing md="30" xl="0" />
             <div className="cs_slider_navigation cs_style_2">
