@@ -44,7 +44,7 @@ export default function Footer() {
   return (
     <footer className="cs_footer cs_style_1 cs_white_color">
       <div
-        className="cs_footer_logo_wrap cs_footer_background" style={{height:"100%"}}>
+        className="cs_footer_logo_wrap cs_footer_background">
       </div>
       <div className="cs_footer_main">
         <div className="container">
@@ -75,14 +75,6 @@ export default function Footer() {
                 <MenuWidget data={menuDataFour} />
               </div>
             </div>
-            {/* <div className="col-lg-4">
-              <div className="cs_footer_item">
-                <Newsletter
-                  title="Be Our Subscribers"
-                  subTitle="To get the latest news about health from our experts"
-                />
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
@@ -91,9 +83,6 @@ export default function Footer() {
             <div className="cs_white_text" style={{fontSize:"0.8rem",paddingTop:"5px" ,  textAlign:"center"}}>
               Copyright © 2024 Xphyre Health. All rights reserved.
             </div>
-          <div className="cs_footer_bottom_in" >
-            {/* <SocialWidget /> */}
-          </div>
         </div>
       </div>
     </footer>

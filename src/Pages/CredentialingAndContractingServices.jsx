@@ -1,24 +1,28 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
-import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
+import Spacing from '../components/Spacing';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import Section from '../components/Section';
+import DepartmentSection from '../components/Section/DepartmentSection';
+import BannerSectionStyle2 from '../components/Section/BannerSection/BannerSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
 import { pageTitle } from '../helpers/PageTitle';
-import { C_and_C_Data1, C_and_C_Data2 } from '../Constants/constants';
+import { C_and_C_Data1, C_and_C_Data2, WhoWeServeCandC } from '../Constants/constants';
 
 
 export default function CredentialingAndContractingServices() {
   pageTitle('C&C');
   return (
     <>
-      <BannerSectionStyle5
-        bgUrl="/images/doctors/banner_bg.svg"
-        imgUrl="/images/doctors/banner_img.png"
+      <HeroStyle5
         title="Credentialing and Contracting Services"
-        subTitle="Unlock Healthcare Excellence with Expert Credentialing and Contracting "
+        detail="Credentialing and contracting are complex yet vital processes, requiring extensive documentation and verification for a simple insurance enrolment. A tiny error, a missing form, or incorrect information can have a profound impact, potentially delaying enrollment or even leading to contract cancellation, which could result in significant trust and revenue loss.  
+        Our medical credentialing and contracting services empower your staff to foster long-lasting relations with insurance companies and patients. With our proficient,    error-free, and reliable credentialing services to diverse hospitals and healthcare systems, your clinic can enjoy improved relationships with insurance payors and   carriers. 
+         Let our experts simplify these complex processes, enhance operational efficiency, and cultivate robust client relations to help you serve more patients!"
+        imgUrl="/images/home_5/hero_img.png"
       />
-      <Section topMd={135} topLg={100} topXl={100}>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
         <AboutSectionStyle2
           title="Unlock Healthcare Excellence with Expert"
           p1="Expert credentialing and contracting services are crucial for healthcare providers to build long-lasting relationships with patients and healthcare systems. Credentialing involves verifying an insurance company or provider's qualifications, including education, training, work history, and licensure."
@@ -27,24 +31,34 @@ export default function CredentialingAndContractingServices() {
           imgUrl="/images/departments/department_img_1.png"
         />
       </Section>
-
-      <Section topMd={200} topLg={150} topXl={110}>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
         <DepartmentSectionStyle2
           sectionTitle="Elevate Medical Practice"
           data={C_and_C_Data1}
         />
       </Section>
-      <Section className="cs_footer_margin_0">
-        <BannerSectionStyle4
-          bgUrl="images/doctors/banner_bg_2.jpeg"
-          title="Why Us?"
-          subTitle="Cultivate deep, long-lasting relationships with insurance companies and patients with Xphyre Health's expert staff"
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
+        <BannerSectionStyle2
+          bgUrl="/images/home_2/cta_bg.jpeg"
+          title="Transform Your Practice with Effortless Billing Solutions from Xphyre Health"
+          subTitle=""
         />
       </Section>
-      <Section topMd={200} topLg={150} topXl={110}>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
         <DepartmentSectionStyle2
           sectionTitle="Discover the Difference"
           data={C_and_C_Data2}
+        />
+      </Section>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
+        <DepartmentSection
+          sectionTitle="Seamless Credentialing and Contracting for Healthcare Professionals: Who We Serve?"
+          bgUrl="images/home_1/department_bg.svg"
+          data={WhoWeServeCandC}
         />
       </Section>
     </>

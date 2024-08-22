@@ -208,7 +208,7 @@ export default function AppointmentForm() {
     <>
         <form className="row" onSubmit={handleSubmit}>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">First Name*</label>
+            <label className="cs_input_label cs_heading_color">First name*</label>
             <input
               type="text"
               className="cs_form_field"
@@ -220,7 +220,7 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Last Name*</label>
+            <label className="cs_input_label cs_heading_color">Last name*</label>
             <input
               type="text"
               className="cs_form_field"
@@ -245,7 +245,7 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Phone Number*</label>
+            <label className="cs_input_label cs_heading_color">Phone number*</label>
             <input
               type="text"
               className="cs_form_field"
@@ -275,7 +275,7 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Monthly Collections*</label>
+            <label className="cs_input_label cs_heading_color">Monthly collections*</label>
             <select
               className="cs_form_field"
               name="monthlyCollections"

@@ -39,6 +39,7 @@ import PBS from './servicesbanners/PBS.jpg';
 import MIEAS from './servicesbanners/MIEAS.jpg';
 import PP from './servicesbanners/PP.jpg';
 import UC from './servicesbanners/UC.jpg';
+import TXE from './servicesbanners/TXE.jpg';
 
 
 
@@ -83,5 +84,6 @@ export {
     PBS,
     MIEAS,
     PP,
-    UC
+    UC,
+    TXE
 }

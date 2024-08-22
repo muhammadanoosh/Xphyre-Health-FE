@@ -27,10 +27,10 @@ export default function SectionHeading({
       )}
       {titleDown && (
         <>
-          <Spacing md="5" />
-          <h3 className="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">
+          <Spacing md="20" />
+          <p className="cs_section_subtitle para_color">
             {parse(titleDown)}
-          </h3>
+          </p>
         </>
       )}
       {subTitle && (

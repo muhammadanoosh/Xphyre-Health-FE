@@ -20,7 +20,8 @@ import {
   PBS,
   MIEAS,
   PP,
-  UC
+  UC,
+  TXE
 } from '../../../assets/allAssets';
 
 export default function BannerSectionStyle5({ title, subTitle }) {
@@ -38,7 +39,7 @@ export default function BannerSectionStyle5({ title, subTitle }) {
     imageSource = contact_us;
   }
   else if (location.pathname.includes('TheXphyreEdge')) {
-    imageSource = our_solutions;
+    imageSource = TXE;
   }
   else if (location.pathname.includes('CAIC')) {
     imageSource = CAIC;
@@ -85,6 +86,7 @@ export default function BannerSectionStyle5({ title, subTitle }) {
   else if (location.pathname.includes('PP')) {
     imageSource = PP;
   }
+  
 
 
 

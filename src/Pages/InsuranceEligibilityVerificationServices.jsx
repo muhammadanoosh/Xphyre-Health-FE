@@ -1,12 +1,13 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
-import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
+import Spacing from '../components/Spacing';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
+import BannerSectionStyle2 from '../components/Section/BannerSection/BannerSectionStyle2';
+import DepartmentSection from '../components/Section/DepartmentSection';
 import Section from '../components/Section';
 import { pageTitle } from '../helpers/PageTitle';
-import { IEVSData1 } from '../Constants/constants';
-import { IEVSdata2 } from '../Constants/constants';
+import { IEVSData1, IEVSdata2, WhoWeServeIEVS } from '../Constants/constants';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 
 
 
@@ -14,13 +15,16 @@ export default function InsuranceEligibilityVerificationServices() {
   pageTitle('IEVS');
   return (
     <>
-      <BannerSectionStyle5
-        bgUrl="/images/doctors/banner_bg.svg"
-        imgUrl="/images/doctors/banner_img.png"
+      <HeroStyle5
         title="Insurance Eligibility Verification Services"
-        subTitle="Unlock Healthcare Excellence with Expert Credentialing and Contracting "
+        detail="Eligibility and insurance verification are vital in medical billing and authorization to ensure accurate and timely submissions and reimbursements. A healthcare practice without the appropriate checks and balances can lose money when critical information or payment details are missing.
+Medical clinics can minimize financial losses and claim rejections with expert insurance eligibility verification solutions. It means no reimbursement delays and better cash flow! At Xphyre Health, our experts obtain prior authorization and validate eligibility to save you time and unnecessary authorization headaches. 
+Our trained and experienced medical billing and authorization specialists deliver swift and efficient eligibility verification, maximizing claim acceptance and minimizing denials. That's how we help take your practice's financial health to the next level!
+"
+        imgUrl="/images/home_5/hero_img.png"
       />
-      <Section topMd={135} topLg={100} topXl={100}>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
         <AboutSectionStyle2
           title="Enhance Your Practice with Professional"
           p1="Insurance verification and eligibility are critical in your revenue cycle management, optimizing your cash flow and reducing denials. The process involves gathering and verifying a patient's details and insurance coverage before providing care."
@@ -29,23 +33,34 @@ export default function InsuranceEligibilityVerificationServices() {
           imgUrl="/images/departments/department_img_1.png"
         />
       </Section>
-      <Section topMd={200} topLg={150} topXl={110}>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
         <DepartmentSectionStyle2
           sectionTitle="Enhance Your Practice"
           data={IEVSData1}
         />
       </Section>
-      <Section className="cs_footer_margin_0">
-        <BannerSectionStyle4
-          bgUrl="images/doctors/banner_bg_2.jpeg"
-          title="Why Us?"
-          subTitle="Cultivate deep, long-lasting relationships with insurance companies and patients with Xphyre Health's expert staff"
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
+        <BannerSectionStyle2
+          bgUrl="/images/home_2/cta_bg.jpeg"
+          title="Transform Your Practice with Effortless Billing Solutions from Xphyre Health"
+          subTitle=""
         />
       </Section>
-      <Section topMd={200} topLg={150} topXl={110}>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
         <DepartmentSectionStyle2
           sectionTitle="Optimize Cash Flow"
           data={IEVSdata2}
+        />
+      </Section>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
+        <DepartmentSection
+          sectionTitle="Discover Seamless Eligibility Verification with Xphyre Health: Who We Serve?"
+          bgUrl="images/home_1/department_bg.svg"
+          data={WhoWeServeIEVS}
         />
       </Section>
     </>

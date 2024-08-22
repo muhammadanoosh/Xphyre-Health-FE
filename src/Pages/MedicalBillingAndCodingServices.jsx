@@ -1,25 +1,29 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
-import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
+import Spacing from '../components/Spacing';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
+import DepartmentSection from '../components/Section/DepartmentSection';
+import BannerSectionStyle2 from '../components/Section/BannerSection/BannerSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
 import Section from '../components/Section';
 import { pageTitle } from '../helpers/PageTitle';
-import { MBCSdata1, MBCSdata2 } from '../Constants/constants';
+import { MBCSdata1, MBCSdata2, WhoWeServeCommon } from '../Constants/constants';
 
 
 export default function MedicalBillingAndCodingServices() {
     pageTitle('MB&CS');
     return (
         <>
-            <BannerSectionStyle5
-                bgUrl="/images/doctors/banner_bg.svg"
-                imgUrl="/images/doctors/banner_img.png"
+            <HeroStyle5
                 title="Medical Billing and Coding Services"
-                subTitle=""
+                detail="An efficient and productive healthcare practice starts with top-notch medical billing and coding services. A tiny mistake can result in week-long delays and unsatisfied clients, affecting your practice's reputation and patient's trust. 
+As the keystone of a healthcare provider's financial health, your organization requires a seamless billing and coding system. Our expert clinical billers and coders enter the picture, offering accurate and timely payments and freeing up your facility's resources. 
+Thus, with Xphyre Health's trained professionals, healthcare providers can minimize claim denials and billing errors, boosting patient flow and revenue! 
+"
+                imgUrl="/images/home_5/hero_img.png"
             />
-
-            <Section topMd={135} topLg={100} topXl={100}>
+            <Spacing md="150" lg="7" xl="100" />
+            <Section >
                 <AboutSectionStyle2
                     title="Streamline Your Medical Practice"
                     p1="Medical billing and coding are vital to your healthcare revenue cycle, ensuring seamless patient registration and payment. Healthcare coding involves extracting billable info from healthcare diagnoses, procedures, and documentation."
@@ -28,23 +32,34 @@ export default function MedicalBillingAndCodingServices() {
                     imgUrl="/images/departments/department_img_1.png"
                 />
             </Section>
-            <Section topMd={200} topLg={150} topXl={110}>
+            <Spacing md="150" lg="7" xl="100" />
+            <Section >
                 <DepartmentSectionStyle2
                     sectionTitle="Unleash Efficiency"
                     data={MBCSdata1}
                 />
             </Section>
-            <Section className="cs_footer_margin_0">
-                <BannerSectionStyle4
-                    bgUrl="images/doctors/banner_bg_2.jpeg"
-                    title="Why Us?"
-                    subTitle="Cultivate deep, long-lasting relationships with insurance companies and patients with Xphyre Health's expert staff"
+            <Spacing md="150" lg="7" xl="100" />
+            <Section>
+                <BannerSectionStyle2
+                    bgUrl="/images/home_2/cta_bg.jpeg"
+                    title="Transform Your Practice with Effortless Billing Solutions from Xphyre Health"
+                    subTitle=""
                 />
             </Section>
-            <Section topMd={200} topLg={150} topXl={110}>
+            <Spacing md="150" lg="7" xl="100" />
+            <Section>
                 <DepartmentSectionStyle2
                     sectionTitle="Simplify Your Medical Billing & Coding"
                     data={MBCSdata2}
+                />
+            </Section>
+            <Spacing md="150" lg="7" xl="100" />
+            <Section>
+                <DepartmentSection
+                    sectionTitle="Tailored Solutions for Every Practice: Who We Serve?"
+                    bgUrl="images/home_1/department_bg.svg"
+                    data={WhoWeServeCommon}
                 />
             </Section>
         </>

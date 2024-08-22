@@ -153,20 +153,20 @@ export const departmentData = [
 export const WhyUsData = [
     {
         iconUrl: compassion,
-        title: 'Unmatched Expertise',
+        title: 'Expert Knowledge and Experience',
         subTitle:
-            'Fostering organic client relations and maximizing reimbursements requires intimate knowledge of credentialing and contracting. Our certified and experienced specialists at Xphyre Health understand the ins and outs of contracts and negotiations.Thus, our experts empower you to deliver exceptional healthcare services while maximizing revenue.',
+            'Our billing specialists have extensive experience in the healthcare industry, ensuring accurate and efficient handling of medical billing and coding. We stay updated with the latest industry standards and regulations to provide top-notch services.',
     },
     {
         iconUrl: compassion,
-        title: 'Personalized Service',
+        title: ' Innovative Technology',
         subTitle:
-            `Xphyre Health believes that no two healthcare clinics are similar, so we offer customized solutions to meet your unique needs. Our dedicated staff of trained medical revenue management experts work closely with your team, providing regular updates and personalized support.What's more? We utilize the latest technology to mitigate the risk of costly errors while enhancing your turnaround times.`,
+            `Xphyre Health leverages cutting-edge technology to streamline the billing process. Our advanced tools and software enhance accuracy, speed up claim processing, and reduce errors, making your billing operations smoother and more reliable.`,
     },
     {
         iconUrl: compassion,
-        title: 'Your Pathway to Simplicity: How to Get Started with Xphyre Health',
-        subTitle: `Empower your practice with top-tier credentialing and contracting services by partnering with Xphyre Health today! By reaching out, you can learn more about how we help you navigate credentialing and contracting challenges.`,
+        title: 'Comprehensive Service',
+        subTitle: `From medical coding and billing to administrative support, Xphyre Health offers a full spectrum of services to manage your revenue cycle effectively. We handle every detail, so you can focus on delivering exceptional patient care.`,
     },
 ];
 
@@ -233,12 +233,12 @@ export const WhyUsDataH = [
     {
         iconUrl: compassion,
         title: `Stay ahead of the curve with cutting-edge technology and an up-to-date patient database`,
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
         title: 'Maximize revenue and minimize out-of-pocket costs by identifying lost revenue causes',
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
@@ -251,12 +251,12 @@ export const WhyUsDataPP = [
     {
         iconUrl: compassion,
         title: `A track record of success in optimizing private practice's efficiency `,
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
         title: 'Access to cutting-edge tech and innovative approaches',
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
@@ -269,12 +269,12 @@ export const WhyUsDataUC = [
     {
         iconUrl: compassion,
         title: `Extensive industry expertise and innovative solutions`,
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
         title: 'Commitment to excellence and state-of-the-art tech',
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
@@ -383,6 +383,11 @@ export const C_and_C_Data2 = [
         description:
             `Xphyre Health believes that no two healthcare clinics are similar, so we offer customized solutions to meet your unique needs. Our dedicated staff of trained medical revenue management experts work closely with your team, providing regular updates and personalized support.  
             What's more? We utilize the latest technology to mitigate the risk of costly errors while enhancing your turnaround times.`
+    },
+    {
+        title: 'Your Pathway to Simplicity: How to Get Started with Xphyre Health',
+        description:
+            `Empower your practice with top-tier credentialing and contracting services by partnering with Xphyre Health today! By reaching out, you can learn more about how we help you navigate credentialing and contracting challenges.`
     },
 ];
 
@@ -1173,7 +1178,7 @@ export const states = [
 ];
 
 export const navLinks = [
-    { to: "/", label: "Home", exact: true },
+    { to: "/Home", label: "Home", exact: true },
     { to: "/OurProcesses", label: "Our Processes" },
     {
         label: "Our Services",
@@ -1207,3 +1212,199 @@ export const monthlyCollections = [
     "$100,000 - $250,000",
     "$250,000+"
 ];
+
+
+export const WhoWeServeHome = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practices',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+    {
+        title: 'Nursing Facilities',
+    },
+    {
+        title: 'All Specialties',
+    },
+];
+
+export const WhoWeServeCandC = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+    {
+        title: 'Nursing Facilities',
+    },
+    {
+        title: 'All Specialties',
+    },
+];
+export const WhoWeServeIEVS = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+];
+
+export const WhoWeServeCA = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+    {
+        title: 'Nursing Facilities',
+    },
+    {
+        title: 'All Specialties',
+    },
+];
+
+export const WhoWeServeMIEAS = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+    {
+        title: 'Nursing Facilities',
+    },
+    {
+        title: 'All Specialties',
+    },
+];
+
+export const WhoWeServeCommon = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+    {
+        title: 'Nursing Facilities',
+    },
+    {
+        title: 'All Specialties',
+    },
+];
+export const WhoWeServeCommon2 = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+];
+
+export const tabData = [
+    {
+        title: "Expert Knowledge",
+        detail: "Our billing specialists have extensive experience in the healthcare industry, ensuring accurate and efficient handling of medical billing and coding. We stay updated with the latest industry standards and regulations to provide top-notch services.",
+    },
+    {
+        title: "Innovative Technology",
+        detail: "Xphyre Health leverages cutting-edge technology to streamline the billing process. Our advanced tools and software enhance accuracy, speed up claim processing, and reduce errors, making your billing operations smoother and more reliable.",
+    },
+    {
+        title: "Comprehensive Service",
+        detail: "From medical coding and billing to administrative support, Xphyre Health offers a full spectrum of services to manage your revenue cycle effectively. We handle every detail, so you can focus on delivering exceptional patient care.",
+    },
+    {
+        title: "Proven Results",
+        detail: "Healthcare practices across Houston trust Xphyre Health for our reliable and effective billing solutions. Our proven track record of transforming revenue cycles and boosting financial performance speaks for itself",
+    }
+];
+

@@ -22,6 +22,17 @@ export default function ContactInfoWidget() {
         </i>
         info@xphyrehealth.com
       </li>
+      <li>
+        <a href="/ContactUs">
+          <button className="cs_btn cs_style_1" type="submit" style={{ position: "relative", top: "2rem" ,marginBottom:"2rem" }}>
+            <span>Contact Us Now</span>
+            <i>
+              <img src="/images/icons/arrow_white.svg" alt="Icon" />
+              <img src="/images/icons/arrow_white.svg" alt="Icon" />
+            </i>
+          </button>
+        </a>
+      </li>
     </ul>
   );
 }

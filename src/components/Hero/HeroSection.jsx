@@ -25,10 +25,10 @@ export default function HeroSection({
       }}
     >
       <div className="container">
-        <div className="cs_hero_text">
+        <div className="cs_hero_text" style={{marginTop:"5rem"}}>
           <h1 className="cs_hero_title cs_hero_color cs_fs_84">{title1}<br/>{title2}<br/>{title3}</h1>
           <div className="cs_hero_text_in">
-            <p className="cs_hero_subtitle cs_hero_color">{subTitle}</p>
+            <p className="cs_hero_subtitle " style={{color:"black"}}>{subTitle}</p>
           </div>
         </div>
       </div>

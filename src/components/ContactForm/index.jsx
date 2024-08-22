@@ -207,7 +207,7 @@ export default function AppointmentForm() {
       <div className='cs_contact_form cs_style_1 cs_white_bg cs_radius_20'>
         <form className="row" onSubmit={handleSubmit}>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">First Name*</label>
+            <label className="cs_input_label cs_heading_color">First name*</label>
             <input
               type="text"
               className="cs_form_field"
@@ -219,7 +219,7 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Last Name*</label>
+            <label className="cs_input_label cs_heading_color">Last name*</label>
             <input
               type="text"
               className="cs_form_field"
@@ -244,7 +244,7 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Phone Number*</label>
+            <label className="cs_input_label cs_heading_color">Phone number*</label>
             <input
               type="text"
               className="cs_form_field"
@@ -274,7 +274,7 @@ export default function AppointmentForm() {
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
           <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Monthly Collections*</label>
+            <label className="cs_input_label cs_heading_color">Monthly collections*</label>
             <select
               className="cs_form_field"
               name="monthlyCollections"
@@ -306,7 +306,19 @@ export default function AppointmentForm() {
             {errors.datetime && <p style={{ color: 'red' }}>{errors.datetime}</p>}
             <div className="cs_height_42 cs_height_xl_25" />
           </div>
-
+          <div className="col-lg-6">
+            <label className="cs_input_label cs_heading_color">Time zone</label>
+            <input
+              type="text"
+              value={formData.timeZone}
+              className="cs_form_field"
+              placeholder="John"
+              name="timeZone"
+              readOnly
+            />
+            {errors.lastName && <p style={{ color: 'red' }}>{errors.lastName}</p>}
+            <div className="cs_height_42 cs_height_xl_25" />
+          </div>
           <div className="col-lg-12">
             <button className="cs_btn cs_style_1" type="submit">
               <span>Submit</span>

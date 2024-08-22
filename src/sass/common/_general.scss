@@ -136,6 +136,19 @@
   }
 }
 
+.cs_fs_60 {
+  font-size: 60px;
+  line-height: 1.04em;
+
+  @media (max-width: 1700px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 26px;
+  }
+}
+
 .cs_fs_40 {
   font-size: 40px;
   line-height: 1.25em;
@@ -191,6 +204,10 @@
 
 .cs_img_filed {
   height: 100%;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
 
   >img {
     height: 100%;
@@ -312,8 +329,8 @@ hr {
   color: $accent;
 }
 
-.cs_main_heading_color{
-    background: -webkit-linear-gradient($accent-three, $accent-four);
+.cs_main_heading_color {
+  background: -webkit-linear-gradient($accent-three, $accent-four);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -340,7 +357,7 @@ hr {
   color: $white;
 }
 
-.para_color{
+.para_color {
   background: -webkit-linear-gradient($black, $gray-dark);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -350,9 +367,33 @@ hr {
   background: linear-gradient(to right, $accent-four, $accent-three);
 }
 
+.line_style {
+  width: 22rem;
+  height: 5px;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px rgb(139, 139, 143) solid;
+  border-style: double;
+}
+
+.style_border {
+  width: 30vw;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 200;
+  padding: 0 4vw 4vw;
+  border-right: 2px;
+  border-left: 0;
+  border-style: solid;
+  /* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
+  border-image: linear-gradient(to bottom, #181818, #eee, #181818) 1 100%;
+}
+
 .cs_gray_bg_1 {
   background-color: rgba(210, 234, 239, 0.2);
 }
+
 
 .cs_half_bg,
 .cs_half_bg_2 {
@@ -390,7 +431,7 @@ hr {
 }
 
 .cs_shadow_1 {
-  box-shadow: 0px 4px 21px 1px rgba(48, 123, 196, 0.1);
+  box-shadow: 0px 4px 21px 1px rgba(48, 123, 196, 0.4);
 }
 
 .cs_shadow_2 {
@@ -465,7 +506,7 @@ hr {
   }
 
   &::after {
-    background-image: linear-gradient(270deg,$accent-four 0%, $accent-end 100%);
+    background-image: linear-gradient(270deg, $accent-four 0%, $accent-end 100%);
     opacity: 0;
   }
 
@@ -786,6 +827,7 @@ input::-ms-input-placeholder,
   }
 }
 
+
 .cs_tabs.cs_style1 {
   display: flex;
   align-items: center;
@@ -811,6 +853,8 @@ input::-ms-input-placeholder,
       width: 100%;
       padding-left: 75px;
     }
+
+
   }
 
   .cs_tab_links {
@@ -3128,11 +3172,10 @@ a.ui-button:active,
   text-overflow: ellipsis;
   // white-space: nowrap;
   transition: all 1s ease;
-  text-align: justify;
+  // text-align: justify;
 }
 
 .cs_iconbox:hover .cs_iconbox_subtitle {
   white-space: normal;
   overflow: visible;
 }
-

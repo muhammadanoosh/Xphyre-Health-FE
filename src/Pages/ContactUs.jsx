@@ -3,6 +3,7 @@ import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSecti
 import ContactForm from '../components/ContactForm';
 import Section from '../components/Section';
 import ContactInfoSection from '../components/Section/ContactInfoSection';
+import Spacing from '../components/Spacing';
 import { pageTitle } from '../helpers/PageTitle';
 
 
@@ -23,14 +24,8 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <Section
-        topMd={200}
-        topLg={150}
-        topXl={100}
-        bottomMd={200}
-        bottomLg={150}
-        bottomXl={110}
-      >
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
         <ContactInfoSection sectionTitle="Find Us Here" />
       </Section>
     </>

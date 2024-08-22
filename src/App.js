@@ -1,7 +1,6 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './Layout';
 import Home from './Pages/Home';
-import About from './Pages/About';
 import CredentialingAndContractingServices from './Pages/CredentialingAndContractingServices';
 import InsuranceEligibilityVerificationServices from './Pages/InsuranceEligibilityVerificationServices';
 import ChartAuditing from './Pages/ChartAuditing';
@@ -21,8 +20,6 @@ import TheXphyreEdge from './Pages/TheXphyreEdge';
 import ContactUs from './Pages/ContactUs';
 import OurProcesses from './Pages/OurProcesses';
 import OurSolutions from './Pages/OurSolutions';
-import Appointments from './Pages/Appointments';
-import Contact from './Pages/Contact';
 import { useEffect } from 'react';
 import ErrorPage from './Pages/ErrorPage';
 
@@ -34,9 +31,9 @@ function App() {
   }, [pathname]);
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path='/Home' element={<Home />} />
         <Route path="C&C" element={<CredentialingAndContractingServices />} />
         <Route path="IEVS" element={<InsuranceEligibilityVerificationServices />} />
         <Route path="CA" element={<ChartAuditing />} />
@@ -56,8 +53,6 @@ function App() {
         <Route path="ContactUs" element={<ContactUs />} />
         <Route path="OurProcesses" element={<OurProcesses />} />
         <Route path="OurSolutions" element={<OurSolutions />} />
-        <Route path="appointments" element={<Appointments />} />
-        <Route path="contact" element={<Contact />} />
       </Route>
       <Route path="*" element={<ErrorPage />} />
     </Routes>
