@@ -32,8 +32,8 @@ function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path='/Home' element={<Home />} />
+        {/* <Route index element={<Home />} /> */}
+        <Route path='/' element={<Home />} />
         <Route path="C&C" element={<CredentialingAndContractingServices />} />
         <Route path="IEVS" element={<InsuranceEligibilityVerificationServices />} />
         <Route path="CA" element={<ChartAuditing />} />

@@ -36,18 +36,19 @@
       height: 35rem;
     }
     @media (max-width: 768px) {
+      font-size: 20px;
       padding: 130px 25px 50px 45px;
-      height: 30rem;
+      height: 26rem;
     }
 
     @media (max-width: 575px) {
       padding: 130px 25px 50px 45px;
-      height: 40rem;
+      height: 33rem;
     }
 
     @media (max-width: 380px) {
       padding: 130px 25px 50px 45px;
-      height: 50rem;
+      height: 40rem;
     }
 
     p {

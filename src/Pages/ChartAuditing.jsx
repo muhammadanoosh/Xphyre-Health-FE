@@ -49,7 +49,7 @@ Whether you run a small clinic or a major hospital, our skilled auditing service
             <Spacing md="150" lg="7" xl="100" />
             <Section>
                 <DepartmentSectionStyle2
-                    sectionTitle="Simplify Your Service with Our Expert Team"
+                    sectionTitle="Simplify Your Service"
                     data={CAdata2}
                 />
             </Section>

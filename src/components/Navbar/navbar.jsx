@@ -42,7 +42,7 @@ export default function Navbar({ variant }) {
           <div className="container">
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
-                <a href="/Home">
+                <a href="/">
                   <div style={{ display: "flex" }} className="cs_site_branding">
                     <img style={{ height: "3rem" }} src={logoNav} alt="logo" />
                     <p style={{ fontSize: "20px", position: "relative", top: "12px", left: "9px", color: 'black' }}>Xphyre <span style={{ fontWeight: 600 }}>Health</span></p>

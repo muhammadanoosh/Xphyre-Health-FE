@@ -8,10 +8,8 @@ export default function BannerSectionStyle2() {
   const location = useLocation();
   let textSource;
 
-  if (location.pathname.includes("/Home")) {
-    textSource = "Transform Your Practice with Effortless Billing Solutions from Xphyre Health";
-  }
-  else if (location.pathname.includes('OurProcesses')) {
+  
+  if (location.pathname.includes('OurProcesses')) {
     textSource = "Elevate Your Practice with Xphyre Health’s Hassle-Free Billing & Coding Solutions";
   }
   else if (location.pathname.includes('OurSolutions')) {
@@ -67,6 +65,9 @@ export default function BannerSectionStyle2() {
   }
   else if (location.pathname.includes('PP')) {
     textSource = "Manage Your Finances and Boost Revenue—Xphyre Health Billing Solutions Takes Care of Everything!";
+  }
+  else if (location.pathname.includes("/")) {
+    textSource = "Transform Your Practice with Effortless Billing Solutions from Xphyre Health";
   }
 
   return (
