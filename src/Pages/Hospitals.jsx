@@ -24,10 +24,10 @@ export default function Hospitals() {
                 H="Skyrocket Your Success with Our Expert Services"
                 p="With a certified team of dedicated medical billers and coders, we help hospitals nationwide enjoy accurate and timely services:"
                 funfactList={[
-                    { number: '20%', title: 'Accuracy Rate' },
-                    { number: '95%', title: 'Collection Rate' },
-                    { number: '50%', title: 'Satisfied Clients' },
-                    { number: '10%', title: 'Claim Approval' },
+                    { number: '99%', title: 'Accuracy Rate' },
+                    { number: '80%', title: 'Reduction in AR Days' },
+                    { number: '99%', title: 'Satisfied Clients' },
+                    { number: '98%', title: 'Claim Approval' },
                 ]}
             />
             <Spacing md="150" lg="7" xl="100" />

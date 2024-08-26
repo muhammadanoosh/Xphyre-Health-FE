@@ -131,7 +131,7 @@ export default function HeroStyle5({ title, detail, p, H, imgUrl, funfactList })
                   </div>
                   {funfactList?.map((item, index) => (
                     <div style={{ position: "relative", top: "0.5rem" }} className="cs_hero_funfact_col" key={index}>
-                      <h3 className="cs_white_color cs_fs_72">{item.number}</h3>
+                      <h3 className="cs_white_color cs_fs_72" style={{fontSize:"3rem"}}>{item.number}</h3>
                       <p className="cs_white_color mb-0">{item.title}</p>
                     </div>
                   ))}

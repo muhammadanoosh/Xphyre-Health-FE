@@ -23,10 +23,10 @@ export default function HealthcareSystems() {
                 detail="With priorities growing and margins shrinking, healthcare systems need a reliable partner that cares for their business the way they care for patients. Xphyre Health enters the frame to streamline your operations and boost your financial health!
                 With a decade of experience and cutting-edge technology, we provide healthcare systems with hassle-free billing and coding services. The result? Zero errors, better patient care, and speedier payments!"
                 funfactList={[
-                    { number: '20%', title: 'Accuracy Rate' },
-                    { number: '95%', title: 'Reduction in AR Days' },
-                    { number: '50%', title: 'Satisfied Clients' },
-                    { number: '10%', title: 'Claim Approval' },
+                    { number: '98.99%', title: 'Accuracy Rate' },
+                    { number: '30%', title: 'Reduction in AR Days' },
+                    { number: '95%', title: 'Satisfied Clients' },
+                    { number: '98%', title: 'Claim Approval' },
                 ]}
             />
             <Spacing md="150" lg="7" xl="100" />

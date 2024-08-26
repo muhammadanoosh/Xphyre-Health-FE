@@ -24,10 +24,10 @@ export default function ClinicsAndImagingCenters() {
                 detail="Is your clinic or specialty center overwhelmed with administrative tasks? Seeking an economical solution to your billing, coding, and authorization needs? Xphyre Health, boasting intimate industry knowledge and a decade of experience, enters the picture.
                 Our certified medical billers and coders utilize state-of-the-art tech and reliable strategies to optimize operations, enhance efficiency, and maximize revenue!"
                 funfactList={[
-                    { number: '20%', title: 'Accuracy Rate' },
-                    { number: '95%', title: 'Reduction in AR Days' },
-                    { number: '50%', title: 'Satisfied Clients' },
-                    { number: '10%', title: 'Claim Approval' },
+                    { number: '99%', title: 'Accuracy Rate' },
+                    { number: '80%', title: 'Reduction in AR Days' },
+                    { number: '99%', title: 'Satisfied Clients' },
+                    { number: '98%', title: 'Claim Approval' },
                 ]}
             />
             <Spacing md="150" lg="7" xl="100" />

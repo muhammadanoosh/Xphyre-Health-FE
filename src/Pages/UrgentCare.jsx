@@ -23,10 +23,10 @@ export default function UrgentCare() {
                 detail="Seeking cost-effective and error-free billing and coding services for your urgent care? Xpyhre Health enters the frame, offering extensive expertise and over a decade of experience! 
                 Our trained specialists boast an in-depth knowledge of medical billing and authorization processes, optimizing reimbursements and revenue. So, with certified billers and coders, we streamline your operations and empower you to deliver quality patient care."
                 funfactList={[
-                    { number: '20%', title: 'Accuracy Rate' },
-                    { number: '95%', title: 'Reduction in AR Days' },
-                    { number: '50%', title: 'Satisfied Clients' },
-                    { number: '10%', title: 'Claim Approval' },
+                    { number: '98.99%', title: 'Accuracy Rate' },
+                    { number: '30%', title: 'Reduction in AR Days' },
+                    { number: '95%', title: 'Satisfied Clients' },
+                    { number: '98%', title: 'Claim Approval' },
                 ]}
             />
             <Spacing md="150" lg="7" xl="100" />

@@ -23,10 +23,10 @@ export default function PrivatePractices() {
                 detail="Private practices often struggle to juggle core business tasks with revenue management, increasing the risk of errors and lost revenue. At Xphyre Health, our expert medical billers and coders optimize your operational efficiency, patient flow, and financial health.
                 With our trained technicians to handle administrative operations, your staff can focus on providing top-quality patient care, increasing satisfaction and revenue!"
                 funfactList={[
-                    { number: '20%', title: 'Accuracy Rate' },
-                    { number: '95%', title: 'Reduction in AR Days' },
-                    { number: '50%', title: 'Satisfied Clients' },
-                    { number: '10%', title: 'Claim Approval' },
+                    { number: '98.99%', title: 'Accuracy Rate' },
+                    { number: '30%', title: 'Reduction in AR Days' },
+                    { number: '95%', title: 'Satisfied Clients' },
+                    { number: '98%', title: 'Claim Approval' },
                 ]}
             />
             <Spacing md="150" lg="7" xl="100" />

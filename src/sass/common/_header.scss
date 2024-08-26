@@ -44,7 +44,7 @@
   .cs_top_header_in {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
     height: 100px;
     position: relative;
@@ -415,6 +415,10 @@
         margin-right: 50px;
         height: inherit;
 
+        @media screen and (max-width: 1400px) {
+          margin-right: 20px;
+        }
+
         &:last-child {
           margin-right: 0;
         }
@@ -499,6 +503,11 @@
           display: block;
           line-height: inherit;
           padding: 7px 20px;
+
+          @media screen and (max-width: 1400px) {
+            padding: 3px 20px;
+          }
+
         }
 
         ul {
@@ -508,6 +517,7 @@
       }
     }
   }
+
 
   .cs_menu_toggle,
   .cs_munu_dropdown_toggle {
@@ -913,6 +923,6 @@
   }
 }
 
-.active{
+.active {
   color: $accent-four;
 }
