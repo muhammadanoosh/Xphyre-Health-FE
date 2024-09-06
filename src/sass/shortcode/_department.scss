@@ -37,14 +37,12 @@
       padding: 30px 20%;
     }
     &:hover {
-      transform: translateY(-20px);
-      background-color: $accent;
+      // transform: translateY(-20px);
+      // background-color: $accent;
       img {
         filter: brightness(0) invert(1);
       }
-      .cs_heading_color {
-        color: #fff;
-      }
+     
     }
   }
   svg {

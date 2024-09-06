@@ -9,7 +9,7 @@ export default function BannerSectionStyle2() {
   let textSource;
 
   
-  if (location.pathname.includes('OurProcesses')) {
+  if (location.pathname.includes('OurApproach')) {
     textSource = "Elevate Your Practice with Xphyre Health’s Hassle-Free Billing & Coding Solutions";
   }
   else if (location.pathname.includes('OurSolutions')) {

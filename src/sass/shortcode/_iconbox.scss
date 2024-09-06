@@ -21,8 +21,8 @@
     }
   }
   .cs_iconbox_icon {
-    height: 120px;
-    width: 120px;
+    height: 7rem;
+    width: 20rem;
     flex: none;
     padding: 25px;
     position: relative;
@@ -195,7 +195,7 @@
   }
   .cs_iconbox_number {
     font-size: 72px;
-    color: rgba($accent, 0.08);
+    // color: rgba($accent, 0.08);
     line-height: 1.14;
     position: absolute;
     left: 84px;

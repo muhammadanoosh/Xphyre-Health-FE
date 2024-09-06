@@ -9,7 +9,7 @@ import DepartmentSection from '../components/Section/DepartmentSection';
 import Spacing from '../components/Spacing';
 import AppointmentSectionStyle2 from '../components/Section/AppointmentSection/AppointmentSectionStyle2';
 import { pageTitle } from '../helpers/PageTitle';
-import {WhoWeServeHome, tabData } from '../Constants/constants';
+import { WhoWeServeHome, tabData } from '../Constants/constants';
 
 
 export default function HomeStyle2() {
@@ -24,10 +24,10 @@ export default function HomeStyle2() {
         videoBtnText="See how we work"
         videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
         funfactList={[
-          { number: '80%', title: 'Accuracy Rate' },
-          { number: '95%', title: 'Collection Rate' },
-          { number: '89%', title: 'Satisfied Clients' },
-          { number: '90%', title: 'Claim Approval' },
+          { number: '98%', title: 'Accuracy Rate' },
+          { number: '30%', title: 'Reduction in AR Days' },
+          { number: '98%', title: 'Satisfied Clients' },
+          { number: '98%', title: 'Claim Approval' },
         ]}
       />
       {/* <Spacing md="150" lg="7" xl="100" /> */}

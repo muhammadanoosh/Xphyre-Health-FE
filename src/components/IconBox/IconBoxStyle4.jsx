@@ -22,7 +22,7 @@ export default function IconBoxStyle4({ title, description }) {
     <div
       className="cs_iconbox cs_style_4"
       style={{
-        height: isExpanded ? '100%' : '13rem',
+        height: isExpanded ? '93%' : '13rem',
         transition: 'height 0.3s ease',
       }}
     >

@@ -57,7 +57,7 @@ export default function Navbar({ variant }) {
                             {link.label}
                           </Link>
                           <DropDown>
-                            <ul className="nav-dropdown" style={{ width: "23rem" }}>
+                            <ul className="nav-dropdown" style={{ width: "20rem" }}>
                               {link.subLinks.map((subLink, subIndex) => (
                                 <li key={subIndex}>
                                   <NavLink to={subLink.to} activeClassName="active" onClick={handleLinkClick}>

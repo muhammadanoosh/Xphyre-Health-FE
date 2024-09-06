@@ -26,7 +26,7 @@ Our trained and experienced medical billing and authorization specialists delive
       <Spacing md="150" lg="7" xl="100" />
       <Section>
         <AboutSectionStyle2
-          title="Enhance Your Practice with Professional"
+          title="Enhance Your Practice with Professionals"
           p1="Insurance verification and eligibility are critical in your revenue cycle management, optimizing your cash flow and reducing denials. The process involves gathering and verifying a patient's details and insurance coverage before providing care."
           p2="During insurance verification, expert authorization specialists confirm the patient's coverage details, insurance plans, deductibles, and restrictions. Ensuring accurate eligibility is crucial for avoiding missing information and denials, ultimately protecting your clinic's revenue."
           p3="Outsourcing insurance eligibility services to our certified experts helps you minimize errors and inefficiencies associated with manual verification. With in-depth experience and state-of-the-art technology, Xphyre Health delivers accurate eligibility and verification information."

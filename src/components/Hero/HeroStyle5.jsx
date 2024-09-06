@@ -32,7 +32,7 @@ export default function HeroStyle5({ title, detail, p, H, imgUrl, funfactList })
 
   let imageSource;
 
-  if (location.pathname.includes('OurProcesses')) {
+  if (location.pathname.includes('OurApproach')) {
     imageSource = our_process;
   }
   else if (location.pathname.includes('OurSolutions')) {

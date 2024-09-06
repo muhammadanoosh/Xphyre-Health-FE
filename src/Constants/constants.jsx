@@ -319,28 +319,28 @@ export const testimonialData = [
         text: 'I am thoroughly impressed with Xphyre Medical Billing (XMB). They respond to my inquiries within hours, not days, and their commitment to collecting every penny owed from insurance companies is remarkable. They have quickly learned my chiropractic software, and their fees are very reasonable. Thanks to XMB, my life is significantly easier.',
         ratingNumber: '5',
         avatarImgUrl: avatar_boy,
-        avatarName: 'Ethan Bennet',
-        avatarDesignation: 'Balanced Life Chiropractic',
+        avatarName: 'Dr. Ethan Bennet',
+        avatarDesignation: 'Balanced Life Internal Medicine',
     },
     {
         text: 'Xphyre Medical Billing (XMB) has exceptional customer service. They are always available to answer my questions. Their professionalism and attention to detail have significantly reduced the stress of managing medical billing in my practice. I highly recommend XMB to any healthcare provider looking for reliable and responsive billing services.',
         ratingNumber: '4.5',
         avatarImgUrl: avatar_girl,
-        avatarName: ' Sarah Johnson',
+        avatarName: 'Dr. Sarah Johnson',
         avatarDesignation: 'FirstResponse Urgent Care',
     },
     {
         text: `XMB has drastically improved our revenue cycle management. Their expertise in handling complex claims and appeals has ensured we receive timely payments. They also provide detailed reports, helping us keep track of our financial health. XMB's efficiency and transparency have made a noticeable difference in our practice.`,
         ratingNumber: '4',
         avatarImgUrl: avatar_boy,
-        avatarName: 'Michael Brown',
-        avatarDesignation: 'Maternal Health Associates',
+        avatarName: 'Dr. Michael Brown',
+        avatarDesignation: 'OB/GYN Associates',
     },
     {
         text: `XMB has been instrumental in optimizing our coding practices. Their team of certified coders ensures accurate and compliant coding, which has maximized our reimbursements. Their dedication to staying current with coding guidelines has been invaluable to our practice. We highly recommend XMB for their coding expertise.`,
         ratingNumber: '4.5',
         avatarImgUrl: avatar_girl,
-        avatarName: 'Laura Martinez',
+        avatarName: 'Dr. Laura Martinez',
         avatarDesignation: 'HeartCare Specialists',
     },
 ];
@@ -1179,19 +1179,19 @@ export const states = [
 
 export const navLinks = [
     { to: "/", label: "Home", exact: true },
-    { to: "/OurProcesses", label: "Our Processes" },
+    { to: "/OurApproach", label: "Our Approach" },
     {
         label: "Our Services",
         subLinks: [
-            { to: "/C&C", label: "Credentialing and Contracting Services" },
-            { to: "/IEVS", label: "Insurance Eligibility Verification Services" },
+            { to: "/C&C", label: "Credentialing and Contracting" },
+            { to: "/IEVS", label: "Insurance Eligibility Verification" },
             { to: "/CA", label: "Chart Auditing" },
-            { to: "/MARS", label: "Medical Accounts Receivable Services" },
-            { to: "/MB&CS", label: "Medical Billing and Coding Services" },
-            { to: "/MIEAS", label: "Medical IT Equipment and Services" },
-            { to: "/OONNS", label: "Out of Networking Negotiation Services" },
-            { to: "/PBS", label: "Patient Billing Services" },
-            { to: "/PARAS", label: "Prior and Retro Authorization Services" },
+            { to: "/MARS", label: "Medical Accounts Receivable" },
+            { to: "/MB&CS", label: "Medical Billing and Coding" },
+            { to: "/MIEAS", label: "Medical IT Equipment" },
+            { to: "/OONNS", label: "Out of Networking Negotiation" },
+            { to: "/PBS", label: "Patient Billing" },
+            { to: "/PARAS", label: "Prior and Retro Authorization" },
             { to: "/HCS", label: "Healthcare Systems" },
             { to: "/CAIC", label: "Clinics and Imaging Centers" },
             { to: "/ER", label: "Emergency Rooms" },
@@ -1200,9 +1200,9 @@ export const navLinks = [
             { to: "/UC", label: "Urgent Care" },
         ]
     },
-    { to: "/OurSolutions", label: "Our Solutions" },
-    { to: "/ContactUs", label: "Contact Us" },
+    // { to: "/OurSolutions", label: "Our Solutions" },
     { to: "/TheXphyreEdge", label: "The Xphyre Edge" },
+    { to: "/ContactUs", label: "Contact Us" },
 ];
 
 export const monthlyCollections = [
@@ -1408,3 +1408,80 @@ export const tabData = [
     }
 ];
 
+export const ourApproach1 = [
+    {
+        title: 'Understanding Your Needs',
+        description:
+            'Every healthcare practice is different, and so are its billing requirements. We start by getting to know your practice, identifying your challenges, and developing a strategy that aligns with your specific goals. This ensures that we provide the most effective billing solutions for your situation.',
+    },
+    {
+        title: 'Ensuring Accurate Data',
+        description:
+            'Clean data is the foundation of efficient billing. We focus on gathering and managing patient information, including insurance details, with precision. This helps us minimize delays and errors in claim submissions while keeping the process smooth from the start.',
+    },
+    {
+        title: 'Managing Claims & Payments',
+        description:
+            'From claim submission to payment processing, our team handles every aspect of your billing needs. We utilize industry-standard coding and compliance practices, keeping up with the latest regulations to ensure accurate and timely claim submissions. Whether dealing with insurance companies or patient payments, we keep everything on track.',
+    },
+    {
+        title: 'Proactive Problem Solving',
+        description:
+            'We know that issues like claim denials or delays can happen, but we’re always ready to act. Our team proactively addresses these challenges, working to resolve any problems quickly and efficiently, so your cash flow remains uninterrupted.',
+    },
+    {
+        title: 'Clear Communication',
+        description:
+            'We believe in keeping things clear and simple. Throughout the billing process, we maintain transparent communication with both healthcare providers and patients, ensuring everyone is informed and on the same page. Our goal is to make billing less stressful and more manageable for all parties involved.',
+    },
+    {
+        title: 'Ongoing Improvement',
+        description:
+            'Billing is not a one-time task; it’s an ongoing process. We continuously monitor and adjust our strategies, always looking for ways to enhance your billing performance and optimize your revenue cycle. Whether through regular reporting or refining workflows, we stay focused on long-term success',
+    },
+];
+export const ourApproach = [
+    {
+        title: 'Understanding Your Needs',
+        subTitle:
+            'Every healthcare practice is different, and so are its billing requirements. We start by getting to know your practice, identifying your challenges, and developing a strategy that aligns with your specific goals. This ensures that we provide the most effective billing solutions for your situation.',
+        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        number: '01',
+    },
+    {
+        title: 'Ensuring Accurate Data',
+        subTitle:
+            'Clean data is the foundation of efficient billing. We focus on gathering and managing patient information, including insurance details, with precision. This helps us minimize delays and errors in claim submissions while keeping the process smooth from the start.',
+        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        number: '02',
+    },
+    {
+        title: 'Managing Claims & Payments',
+        subTitle:
+            'From claim submission to payment processing, our team handles every aspect of your billing needs. We utilize industry-standard coding and compliance practices, keeping up with the latest regulations to ensure accurate and timely claim submissions. Whether dealing with insurance companies or patient payments, we keep everything on track.',
+        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        number: '03',
+    },
+    {
+        title: 'Proactive Problem Solving',
+        subTitle:
+            'We know that issues like claim denials or delays can happen, but we’re always ready to act. Our team proactively addresses these challenges, working to resolve any problems quickly and efficiently, so your cash flow remains uninterrupted.',
+        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        number: '04',
+    },
+    {
+        title: 'Clear Communication',
+        subTitle:
+            'We believe in keeping things clear and simple. Throughout the billing process, we maintain transparent communication with both healthcare providers and patients, ensuring everyone is informed and on the same page. Our goal is to make billing less stressful and more manageable for all parties involved.',
+        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        number: '05',
+    },
+    {
+        title: 'Ongoing Improvement',
+        subTitle:
+            'Billing is not a one-time task; it’s an ongoing process. We continuously monitor and adjust our strategies, always looking for ways to enhance your billing performance and optimize your revenue cycle. Whether through regular reporting or refining workflows, we stay focused on long-term success.',
+        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        number: '06',
+    },
+
+];

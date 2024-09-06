@@ -2,11 +2,11 @@ import React from 'react';
 import SectionHeading from '../../SectionHeading';
 import Spacing from '../../Spacing';
 import IconBoxStyle4 from '../../IconBox/IconBoxStyle4';
+import { ourApproach1 } from '../../../Constants/constants';
 
 export default function DepartmentSectionStyle1({
   sectionTitle,
   sectionTitleUp,
-  data,
 }) {
   return (
     <div className="container">
@@ -24,7 +24,7 @@ export default function DepartmentSectionStyle1({
             </a>
           <Spacing md="72" lg="50" />
         </div>
-        {data?.map((item, index) => (
+        {ourApproach1?.map((item, index) => (
           <div className="col-md-6 col-xl-4" key={index}>
             <IconBoxStyle4 {...item} />
           </div>

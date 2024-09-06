@@ -18,7 +18,7 @@ import PrivatePractices from './Pages/PrivatePractices';
 import UrgentCare from './Pages/UrgentCare';
 import TheXphyreEdge from './Pages/TheXphyreEdge';
 import ContactUs from './Pages/ContactUs';
-import OurProcesses from './Pages/OurProcesses';
+import OurApproach from './Pages/OurApproach';
 import OurSolutions from './Pages/OurSolutions';
 import { useEffect } from 'react';
 import ErrorPage from './Pages/ErrorPage';
@@ -51,7 +51,7 @@ function App() {
         <Route path="UC" element={<UrgentCare />} />
         <Route path="TheXphyreEdge" element={<TheXphyreEdge />} />
         <Route path="ContactUs" element={<ContactUs />} />
-        <Route path="OurProcesses" element={<OurProcesses />} />
+        <Route path="OurApproach" element={<OurApproach />} />
         <Route path="OurSolutions" element={<OurSolutions />} />
       </Route>
       <Route path="*" element={<ErrorPage />} />

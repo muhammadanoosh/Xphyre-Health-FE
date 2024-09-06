@@ -9,7 +9,7 @@ export default function AboutSection({ spiningImgUrl, title, subTitle, featureLi
   const location = useLocation();
   let imageSource;
 
-  if (location.pathname.includes('OurProcesses')) {
+  if (location.pathname.includes('OurApproach')) {
     imageSource = streamline_billing;
   } else if (location.pathname.includes('OurSolutions')) {
     imageSource = maximize_your_practice;

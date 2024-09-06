@@ -23,9 +23,9 @@ export default function EmergencyRooms() {
                 detail="Freestanding and hospital emergency rooms are critical resources for communities but can increase your staff's daily responsibilities, affecting patient care and revenue. Xphyre Health provides top-notch, custom emergency room billing and coding services.
                     With a decade of experience and skilled medical billers and coders, we ensure your emergency department runs smoothly and efficiently!"
                 funfactList={[
-                    { number: '99%', title: 'Accuracy Rate' },
-                    { number: '80%', title: 'Reduction in AR Days' },
-                    { number: '99%', title: 'Satisfied Clients' },
+                    { number: '98%', title: 'Accuracy Rate' },
+                    { number: '30%', title: 'Reduction in AR Days' },
+                    { number: '98%', title: 'Satisfied Clients' },
                     { number: '98%', title: 'Claim Approval' },
                 ]}
             />

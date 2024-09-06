@@ -14,7 +14,7 @@ export default function BannerSectionStyle5({ title, subTitle }) {
   const location = useLocation();
   let imageSource;
 
-  if (location.pathname.includes('OurProcesses')) {
+  if (location.pathname.includes('OurApproach')) {
     imageSource = our_process;
   }
   else if (location.pathname.includes('OurSolutions')) {

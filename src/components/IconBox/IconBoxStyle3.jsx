@@ -10,7 +10,7 @@ export default function IconBoxStyle3({ title, subTitle, iconUrl, number }) {
         </div>
       </div>
       <div className="cs_iconbox_right">
-        <h4 className="cs_iconbox_number">{number}</h4>
+        <h4 className="cs_iconbox_number" style={{color:"para_color"}}>{number}</h4>
         <h2 className="cs_iconbox_title cs_fs_32 cs_semibold">
           {parse(title)}
         </h2>

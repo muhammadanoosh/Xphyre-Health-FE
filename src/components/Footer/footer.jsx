@@ -9,23 +9,23 @@ import TextWidget from '../Widget/TextWidget';
 
 const menuDataOne = [
   { title: 'Home', href: '/' },
-  { title: 'Our Processes', href: '/OurProcesses' },
-  { title: 'Our Solutions', href: '/OurSolutions' },
-  { title: 'Credentialing and Contracting Services', href: '/C&C' },
-  { title: 'Insurance Eligibility Verification Services', href: '/IEVS' }
+  { title: 'Our Approach', href: '/OurApproach' },
+  // { title: 'Our Solutions', href: '/OurSolutions' },
+  { title: 'Credentialing and Contracting', href: '/C&C' },
+  { title: 'Insurance Eligibility Verification ', href: '/IEVS' }
 ];
 
 const menuDataTwo = [
   { title: 'Chart Auditing', href: '/CA' },
-  { title: 'Medical Accounts Receivable Services', href: '/MARS' },
-  { title: 'Medical Billing and Coding Services', href: '/MB&CS' },
-  { title: 'Medical IT Equipment and Services', href: '/MIEAS' },
-  { title: 'Out of Networking Negotiation Services', href: '/OONNS' }
+  { title: 'Medical Accounts Receivable', href: '/MARS' },
+  { title: 'Medical Billing and Coding', href: '/MB&CS' },
+  { title: 'Medical IT Equipment', href: '/MIEAS' },
+  { title: 'Out of Networking Negotiation ', href: '/OONNS' }
 ];
 
 const menuDataThree = [
-  { title: 'Patient Billing Services', href: '/PBS' },
-  { title: 'Prior and Retro Authorization Services', href: '/PARAS' },
+  { title: 'Patient Billing', href: '/PBS' },
+  { title: 'Prior and Retro Authorization', href: '/PARAS' },
   { title: 'Clinics and Imaging Centers', href: '/CAIC' },
   { title: 'Emergency Rooms', href: '/ER' },
   { title: 'Healthcare Systems', href: '/HCS' }
