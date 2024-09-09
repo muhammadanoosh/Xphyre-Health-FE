@@ -1445,42 +1445,42 @@ export const ourApproach = [
         title: 'Understanding Your Needs',
         subTitle:
             'Every healthcare practice is different, and so are its billing requirements. We start by getting to know your practice, identifying your challenges, and developing a strategy that aligns with your specific goals. This ensures that we provide the most effective billing solutions for your situation.',
-        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        iconUrl: '/images/OurApproach/UnderstandingYourNeeds.svg',
         number: '01',
     },
     {
         title: 'Ensuring Accurate Data',
         subTitle:
             'Clean data is the foundation of efficient billing. We focus on gathering and managing patient information, including insurance details, with precision. This helps us minimize delays and errors in claim submissions while keeping the process smooth from the start.',
-        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        iconUrl: '/images/OurApproach/EnsuringAccurateData.svg',
         number: '02',
     },
     {
         title: 'Managing Claims & Payments',
         subTitle:
             'From claim submission to payment processing, our team handles every aspect of your billing needs. We utilize industry-standard coding and compliance practices, keeping up with the latest regulations to ensure accurate and timely claim submissions. Whether dealing with insurance companies or patient payments, we keep everything on track.',
-        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        iconUrl: '/images/OurApproach/ManagingClaims&Payments.svg',
         number: '03',
     },
     {
         title: 'Proactive Problem Solving',
         subTitle:
             'We know that issues like claim denials or delays can happen, but we’re always ready to act. Our team proactively addresses these challenges, working to resolve any problems quickly and efficiently, so your cash flow remains uninterrupted.',
-        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        iconUrl: '/images/OurApproach/ProactiveProblemSolving.svg',
         number: '04',
     },
     {
         title: 'Clear Communication',
         subTitle:
             'We believe in keeping things clear and simple. Throughout the billing process, we maintain transparent communication with both healthcare providers and patients, ensuring everyone is informed and on the same page. Our goal is to make billing less stressful and more manageable for all parties involved.',
-        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        iconUrl: '/images/OurApproach/ClearCommunication.svg',
         number: '05',
     },
     {
         title: 'Ongoing Improvement',
         subTitle:
             'Billing is not a one-time task; it’s an ongoing process. We continuously monitor and adjust our strategies, always looking for ways to enhance your billing performance and optimize your revenue cycle. Whether through regular reporting or refining workflows, we stay focused on long-term success.',
-        iconUrl: '/images/home_2/wording_process_icon_4.svg',
+        iconUrl: '/images/OurApproach/OngoingImprovement.svg',
         number: '06',
     },
 
