@@ -8,13 +8,14 @@ export default function ContactInfoWidget() {
         <i className="cs_accent_bg">
           <Icon icon="ep:location" />
         </i>
-        Suite 350, Houston,TX. 77084
+        2717 Commercial Center Blvd,<br /> Suite E200,
+        Katy, Texas, 77494
       </li>
       <li>
         <i className="cs_accent_bg">
           <Icon icon="fluent:call-24-regular" />
         </i>
-        855-585-3935
+        832-631-6660
       </li>
       <li>
         <i className="cs_accent_bg">

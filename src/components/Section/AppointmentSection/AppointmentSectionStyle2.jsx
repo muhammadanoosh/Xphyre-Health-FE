@@ -19,7 +19,7 @@ export default function AppointmentSectionStyle2({
       }}
     >
       <div className="container">
-        <div className="cs_height_132" />
+        <div className="cs_height_70" />
         <div className="cs_appointment_img">
           <img src={book_an_appointment} alt="Appointment" />
         </div>

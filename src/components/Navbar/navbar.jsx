@@ -158,7 +158,7 @@ export default function Navbar({ variant }) {
             <Spacing md="20" lg="50" xl="35" />
             <IconBoxStyle11
               title="Phone"
-              subTitle="855-585-3935"
+              subTitle="832-631-6660"
               iconSrc={contact}
             />
             <Spacing md="30" lg="30" xl="30" />
@@ -170,7 +170,7 @@ export default function Navbar({ variant }) {
             <Spacing md="30" lg="30" xl="30" />
             <IconBoxStyle11
               title="Location"
-              subTitle="Suite 350, Houston,TX. 77084"
+              subTitle="2717 Commercial Center Blvd, Suite E200, Katy, Texas, 77494"
               iconSrc={location}
             />
           </div>

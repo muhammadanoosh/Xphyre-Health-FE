@@ -15,6 +15,10 @@ export default function AppointmentForm() {
     state: '',
     monthlyCollections: '',
     datetime: '',
+    specialtyType: '',
+    specialties: '',
+    numberOfProviders: '',
+    honeycomb: '',
     time: null,
     date: null,
     timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
@@ -65,6 +69,13 @@ export default function AppointmentForm() {
 
     clearError('datetime');
   };
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
   const handleMonthlyCollectionChange = (e) => {
     const { name, value } = e.target;
@@ -100,7 +111,7 @@ export default function AppointmentForm() {
   };
 
   const validateForm = (formData) => {
-    const { fullname, email, phoneNumber, state, datetime, monthlyCollections } = formData;
+    const { fullname, email, phoneNumber, state, datetime, monthlyCollections, specialtyType, numberOfProviders, specialties } = formData;
 
     let valid = true;
     let errors = {};
@@ -147,6 +158,23 @@ export default function AppointmentForm() {
       errors.monthlyCollections = 'Invalid monthly collections';
       valid = false;
     }
+
+    if (!specialtyType) {
+      errors.specialtyType = 'Please select a specialty type';
+      valid = false;
+    }
+
+    // Validate Specialties (if Multiple Specialties is selected)
+    if (!specialties) {
+      errors.specialties = 'Please mention your specialties';
+      valid = false;
+    }
+
+    // Validate Number of Providers (drop-down)
+    if (!numberOfProviders) {
+      errors.numberOfProviders = 'Please select the number of providers';
+      valid = false;
+    }
     setErrors(errors);
     return valid;
   };
@@ -172,6 +200,10 @@ export default function AppointmentForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     let isValid = validateForm(formData);
+    console.log(formData);
+    if (formData.honeycomb !== "") {
+      setModal({ visible: true, message: 'Bot filling is not allowed' });
+    }
 
     if (isValid) {
       axios.post('https://xphyre-health-be.netlify.app/.netlify/functions/api/send_email', {
@@ -206,135 +238,200 @@ export default function AppointmentForm() {
   };
   return (
     <>
-        <form className="row" onSubmit={handleSubmit}>
-          <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">First name*</label>
-            <input
-              type="text"
-              className="cs_form_field"
-              placeholder="David"
-              name="firstName"
-              onChange={handleChange}
-            />
-            {errors.firstName && <p style={{ color: 'red' }}>{errors.firstName}</p>}
-            <div className="cs_height_42 cs_height_xl_25" />
-          </div>
-          <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Last name*</label>
-            <input
-              type="text"
-              className="cs_form_field"
-              placeholder="John"
-              name="lastName"
-              onChange={handleChange}
-            />
-            {errors.lastName && <p style={{ color: 'red' }}>{errors.lastName}</p>}
-            <div className="cs_height_42 cs_height_xl_25" />
-          </div>
-          <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Email*</label>
-            <input
-              type="email"
-              className="cs_form_field"
-              placeholder="example@gmail.com"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-            {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
-            <div className="cs_height_42 cs_height_xl_25" />
-          </div>
-          <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Phone number*</label>
-            <input
-              type="text"
-              className="cs_form_field"
-              placeholder="(xxx)-xxx-xxxx"
-              name="phoneNumber"
-              value={formData.phoneNumber}
-              onChange={handlePhoneNumChange}
-            />
-            {errors.phoneNumber && <p style={{ color: 'red' }}>{errors.phoneNumber}</p>}
-            <div className="cs_height_42 cs_height_xl_25" />
-          </div>
-          <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">State*</label>
-            <select
-              className="cs_form_field"
-              name="state"
-              value={formData.state}
-              onChange={handleChange}
-            >
-              {states.map((state) => (
-                <option key={state.value} value={state.value}>
-                  {state.name}
-                </option>
-              ))}
-            </select>
-            {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
-            <div className="cs_height_42 cs_height_xl_25" />
-          </div>
-          <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Monthly collections*</label>
-            <select
-              className="cs_form_field"
-              name="monthlyCollections"
-              value={formData.monthlyCollections}
-              onChange={handleMonthlyCollectionChange}
-            >
-              {monthlyCollections.map((monthlyCollections) => (
-                <option key={monthlyCollections.value} value={monthlyCollections.value}>
-                  {monthlyCollections}
-                </option>
-              ))}
-            </select>
-            {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
-            <div className="cs_height_42 cs_height_xl_25" />
-          </div>
-          <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Select a suitable time*</label>
-            <DatePicker
-              selected={formData.datetime}
-              onChange={handleDateChange}
-              showTimeSelect
-              dateFormat="MMMM d, yyyy h:mm aa"
-              timeIntervals={15} // Adjusts the time intervals to scroll through
-              minDate={new Date()} // Prevents past dates
-              minTime={setHours(setMinutes(new Date(), 0), 0)} // Start time limit (e.g., 00:00)
-              maxTime={setHours(setMinutes(new Date(), 59), 23)} // End time limit (e.g., 23:59)
-              customInput={<CustomInput />} // Use custom input with placeholder
-            />
-            {errors.datetime && <p style={{ color: 'red' }}>{errors.datetime}</p>}
-            <div className="cs_height_42 cs_height_xl_25" />
-          </div>
+      <form className="row" onSubmit={handleSubmit}>
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">First name*</label>
+          <input
+            type="text"
+            className="cs_form_field"
+            placeholder="David"
+            name="firstName"
+            onChange={handleChange}
+          />
+          {errors.firstName && <p style={{ color: 'red' }}>{errors.firstName}</p>}
+          <div className="cs_height_42 cs_height_xl_5" />
+        </div>
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">Last name*</label>
+          <input
+            type="text"
+            className="cs_form_field"
+            placeholder="John"
+            name="lastName"
+            onChange={handleChange}
+          />
+          {errors.lastName && <p style={{ color: 'red' }}>{errors.lastName}</p>}
+          <div className="cs_height_42 cs_height_xl_5" />
+        </div>
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">Email*</label>
+          <input
+            type="email"
+            className="cs_form_field"
+            placeholder="example@gmail.com"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
+          <div className="cs_height_42 cs_height_xl_5" />
+        </div>
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">Phone number*</label>
+          <input
+            type="text"
+            className="cs_form_field"
+            placeholder="(xxx)-xxx-xxxx"
+            name="phoneNumber"
+            value={formData.phoneNumber}
+            onChange={handlePhoneNumChange}
+          />
+          {errors.phoneNumber && <p style={{ color: 'red' }}>{errors.phoneNumber}</p>}
+          <div className="cs_height_42 cs_height_xl_5" />
+        </div>
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">State*</label>
+          <select
+            className="cs_form_field"
+            name="state"
+            value={formData.state}
+            onChange={handleChange}
+          >
+            {states.map((state) => (
+              <option key={state.value} value={state.value}>
+                {state.name}
+              </option>
+            ))}
+          </select>
+          {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
+          <div className="cs_height_42 cs_height_xl_5" />
+        </div>
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">Monthly collections*</label>
+          <select
+            className="cs_form_field"
+            name="monthlyCollections"
+            value={formData.monthlyCollections}
+            onChange={handleMonthlyCollectionChange}
+          >
+            {monthlyCollections.map((monthlyCollections) => (
+              <option key={monthlyCollections.value} value={monthlyCollections.value}>
+                {monthlyCollections}
+              </option>
+            ))}
+          </select>
+          {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
+          <div className="cs_height_42 cs_height_xl_5" />
+        </div>
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">Select a suitable time*</label>
+          <DatePicker
+            selected={formData.datetime}
+            onChange={handleDateChange}
+            showTimeSelect
+            dateFormat="MMMM d, yyyy h:mm aa"
+            timeIntervals={15} // Adjusts the time intervals to scroll through
+            minDate={new Date()} // Prevents past dates
+            minTime={setHours(setMinutes(new Date(), 0), 0)} // Start time limit (e.g., 00:00)
+            maxTime={setHours(setMinutes(new Date(), 59), 23)} // End time limit (e.g., 23:59)
+            customInput={<CustomInput />} // Use custom input with placeholder
+          />
+          {errors.datetime && <p style={{ color: 'red' }}>{errors.datetime}</p>}
+          <div className="cs_height_42 cs_height_xl_5" />
+        </div>
 
-          <div className="col-lg-6">
-            <label className="cs_input_label cs_heading_color">Time zone</label>
-            <input
-              type="text"
-              value={formData.timeZone}
-              className="cs_form_field"
-              placeholder="John"
-              name="timeZone"
-              readOnly
-            />
-            {errors.lastName && <p style={{ color: 'red' }}>{errors.lastName}</p>}
-            <div className="cs_height_42 cs_height_xl_25" />
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">Time zone</label>
+          <input
+            type="text"
+            value={formData.timeZone}
+            className="cs_form_field"
+            placeholder="John"
+            name="timeZone"
+            readOnly
+          />
+          {errors.lastName && <p style={{ color: 'red' }}>{errors.lastName}</p>}
+          <div className="cs_height_42 cs_height_xl_5" />
+        </div>
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">Number of Providers*</label>
+          <select
+            name="numberOfProviders"
+            value={formData.numberOfProviders}
+            className="cs_form_field"
+            onChange={handleInputChange}
+          >
+            <option value="">Select number of providers</option>
+            <option value="1-5">1-5</option>
+            <option value="5+">5+</option>
+          </select>
+          {errors.numberOfProviders && <p style={{ color: 'red' }}>{errors.numberOfProviders}</p>}
+          <div className="cs_height_42 cs_height_xl_5" />
+        </div>
+
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">Specialty Type*</label>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <label>
+              <input
+                type="radio"
+                value="single"
+                name="specialtyType"
+                checked={formData.specialtyType === 'single'}
+                onChange={handleInputChange}
+              />
+              Single Specialty
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="multiple"
+                name="specialtyType"
+                checked={formData.specialtyType === 'multiple'}
+                onChange={handleInputChange}
+              />
+              Multiple Specialties
+            </label>
           </div>
+          {formData.specialtyType && (
+            <div>
+              <label className="cs_input_label cs_heading_color">Please mention your specialties</label>
+              <textarea
+                type="text"
+                value={formData.specialties}
+                className="cs_form_field"
+                placeholder=" Enter Speciality/Specialities"
+                name="specialties"
+                onChange={handleInputChange}
+              >
+              </textarea>
+            </div>
+          )}
+          {errors.specialtyType && <p style={{ color: 'red' }}>{errors.specialtyType}</p>}
+          <div className="cs_height_42 cs_height_xl_25" />
+        </div>
 
-          <div className="col-lg-12">
-            <button className="cs_btn cs_style_1" type="submit">
-              <span>Submit</span>
-              <i>
-                <img src="/images/icons/arrow_white.svg" alt="Icon" />
-                <img src="/images/icons/arrow_white.svg" alt="Icon" />
-              </i>
-            </button>
-          </div>
+        {/* Hidden Honeycomb Field */}
+        <input
+          type="hidden"
+          name="honeycomb"
+          value={formData.honeycomb}
+          onChange={handleInputChange}
+        />
 
-        </form>
+        <div className="col-lg-12">
+          <button className="cs_btn cs_style_1" type="submit">
+            <span>Submit</span>
+            <i>
+              <img src="/images/icons/arrow_white.svg" alt="Icon" />
+              <img src="/images/icons/arrow_white.svg" alt="Icon" />
+            </i>
+          </button>
+        </div>
 
-        <Modal visible={modal.visible} message={modal.message} onClose={closeModal} />
+      </form>
+
+      <Modal visible={modal.visible} message={modal.message} onClose={closeModal} />
     </>
 
 

@@ -316,11 +316,11 @@ export const brandData = [
 
 export const testimonialData = [
     {
-        text: 'I am thoroughly impressed with Xphyre Medical Billing (XMB). They respond to my inquiries within hours, not days, and their commitment to collecting every penny owed from insurance companies is remarkable. They have quickly learned my chiropractic software, and their fees are very reasonable. Thanks to XMB, my life is significantly easier.',
+        text: 'I am thoroughly impressed with Xphyre Medical Billing (XMB). They respond to my inquiries within hours, not days, and their commitment to collecting every penny owed from insurance companies is remarkable. They have quickly learned my software, and their fees are very reasonable. Thanks to XMB, my life is significantly easier.',
         ratingNumber: '5',
         avatarImgUrl: avatar_boy,
         avatarName: 'Dr. Ethan Bennet',
-        avatarDesignation: 'Balanced Life Internal Medicine',
+        avatarDesignation: ' Internal Medicine Clinic',
     },
     {
         text: 'Xphyre Medical Billing (XMB) has exceptional customer service. They are always available to answer my questions. Their professionalism and attention to detail have significantly reduced the stress of managing medical billing in my practice. I highly recommend XMB to any healthcare provider looking for reliable and responsive billing services.',
